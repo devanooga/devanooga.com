@@ -1,0 +1,9 @@
+# Site settings
+title: devanooga
+url: "https://devanooga.com"
+twitter_username: devanooga
+github_username:  devanooga
+
+# Build settings
+markdown: kramdown
+include: ['_pages']
