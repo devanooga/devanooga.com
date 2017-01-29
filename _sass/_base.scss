@@ -208,3 +208,16 @@ pre {
         }
     }
 }
+
+
+
+/**
+ * Screen reader-only
+ */
+.sr-only {
+    display:inline-block;
+    width:0;
+    height:0;
+    overflow:hidden;
+    text-indent:-9999em;
+}
