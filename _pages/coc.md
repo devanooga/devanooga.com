@@ -45,6 +45,6 @@ We ask that users keep these additional rules in mind when using the devanooga S
 - Users are allowed only one account.
 - Users may not impersonate other users, celebrities, etc.
 - Try to find a relevant channel for a topic of discussion. For example, don't talk about your latest trip to the gun range in `#ruby`.
-- Political, religious, and otherwise sensitive or controversial discussions are allowed, but we ask that users keep such topics out of the #general and #random channels.
+- Political, religious, and otherwise sensitive or controversial discussions are welcome, but we ask that users keep such topics out of the #general and #random channels.
 - Users are welcome to create new channels for any topic. Administrators _may_ remove a channel if it is determined that it violates our CoC.
 - Bots are discouraged. If you would like to create a bot, please limit it to only one channel. Keep in mind that most users are wanting to interact with other people, not robots. We may remove bots if they are abused in any way.
