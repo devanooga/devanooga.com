@@ -21,6 +21,12 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    padding-top: (50/$base-font-size)*1em;
+    * {
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-property: none;
+    }
 }
 
 

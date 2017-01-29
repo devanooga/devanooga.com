@@ -1,0 +1,125 @@
+.navigation {
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    background-color: #fff;
+    border-top: 1px solid $grey-color-light;
+    border-bottom: 1px solid $grey-color-light;
+    & ~ li {
+      border-top: none;
+    }
+    a {
+      display: block;
+      font-size: (14/$base-font-size)*1em;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding: 1em $spacing-unit;
+      color: inherit;
+    }
+  }
+  header & {
+    z-index: 3;
+    max-height: 0;
+    max-width: (400/$base-font-size)*1em;
+    overflow: hidden;
+    padding-top: (50/$base-font-size)*1em;
+    margin-left: $spacing-unit*-1;
+    margin-right: $spacing-unit*-1;
+    transition-property: max-height;
+    background-color: $text-color;
+    li {
+      background-color: transparent;
+      border-color: $grey-color-dark;
+      a {
+        color: #fff;
+        font-weight: normal;
+        display: block;
+        padding-left: $spacing-unit/2;
+        padding-right: $spacing-unit/2;
+      }
+    }
+    &:target {
+      ol{
+        position: relative;
+        z-index: 10;
+      }
+      max-height: 300px;
+    }
+    @media screen and (min-width: (400/16)*1em) {
+      margin-left: auto;
+    }
+    @media screen and (min-width: (700/16)*1em) {
+      padding-top: 0;
+      max-width: initial;
+      max-height: initial;
+      ol {
+        padding-left: (214/$base-font-size)*1em;
+        text-align: right;
+        z-index: 3;
+      }
+      &:target ol {
+        z-index: 3;
+      }
+      li {
+        display: inline;
+        border: none;
+        a {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+.navigation--open {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  float: right;
+  color: #fff !important;
+  font-size: (14/$base-font-size)*1em;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  letter-spacing: 1px;
+  padding: 1.1em $spacing-unit/1.6 0.9em;
+  &::before {
+    content: '';
+    display: block;
+    float: left;
+    margin: 0 (8/14)*1em 0 0;
+    width: (21/14)*1em;
+    height: (19/14)*1em;
+    background-image: url("/images/menu-sammich@1x.png");
+    background-position: center center;
+    // define background-size for browsers that don’t support cover
+    background-size: (21/$base-font-size)*1em (19/$base-font-size)*1em;
+    background-size: cover;
+  }
+  @media screen and (min-width: (700/16)*1em) {
+    display: none;
+  }
+}
+
+.navigation--close {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  padding: 0;
+  display: none;
+  .navigation:target & {
+    display: block;
+  }
+  @media screen and (min-width: (700/16)*1em) {
+    display: none !important;
+  }
+}
