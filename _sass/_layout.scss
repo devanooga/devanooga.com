@@ -82,3 +82,9 @@ main {
         }
     }
 }
+
+section, article {
+    * + & {
+        margin-top: 1.4em;
+    }
+}
