@@ -73,4 +73,12 @@
  */
 main {
     padding: $spacing-unit 0;
+    & > header {
+        font-size: (22/$base-font-size)*1em;
+        border-bottom: 1px solid $grey-color-light;
+        padding: 0 0 1em;
+        p {
+            font-weight: 500;
+        }
+    }
 }
