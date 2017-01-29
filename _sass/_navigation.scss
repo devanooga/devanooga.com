@@ -124,6 +124,7 @@
   background-color: transparent;
   padding: 0;
   display: none;
+  cursor: default;
   .navigation:target & {
     display: block;
   }
