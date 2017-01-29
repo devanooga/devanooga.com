@@ -16,7 +16,7 @@
       font-size: (14/$base-font-size)*1em;
       font-weight: 500;
       text-transform: uppercase;
-      padding: 1em $spacing-unit;
+      padding: (1em - (4/14)*1em) ($spacing-unit - (4/14)*1em);
       color: inherit;
     }
   }
@@ -37,8 +37,16 @@
         color: #fff;
         font-weight: normal;
         display: block;
-        padding-left: $spacing-unit/2;
-        padding-right: $spacing-unit/2;
+        border: (4/14)*1em solid transparent;
+        padding-left: $spacing-unit/2 - (4/14)*1em;
+        padding-right: $spacing-unit/2 - (4/14)*1em;
+        &:hover, &:focus, &.active {
+          outline: none;
+          background-color: $grey-color-dark;
+        }
+        &:focus {
+          border-color: $grey-color-light;
+        }
       }
     }
     &:target {
