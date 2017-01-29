@@ -8,6 +8,11 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+article,aside,details,figcaption,figure,
+footer,header,main,hgroup,menu,nav,section {
+    display: block;
+}
+
 
 
 /**
