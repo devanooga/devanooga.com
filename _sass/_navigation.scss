@@ -61,8 +61,8 @@
     }
     @media screen and (min-width: (700/16)*1em) {
       padding-top: 0;
-      max-width: initial;
-      max-height: initial;
+      max-width: none;
+      max-height: none;
       ol {
         padding-left: (214/$base-font-size)*1em;
         text-align: right;
