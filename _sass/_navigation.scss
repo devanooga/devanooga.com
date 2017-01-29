@@ -23,18 +23,16 @@
   header & {
     z-index: 3;
     max-height: 0;
-    max-width: (400/$base-font-size)*1em;
     overflow: hidden;
     padding-top: (50/$base-font-size)*1em;
     margin-left: $spacing-unit*-1;
     margin-right: $spacing-unit*-1;
     transition-property: max-height;
-    background-color: $text-color;
     li {
-      background-color: transparent;
-      border-color: $grey-color-dark;
+      background-color: #fff;
+      border-color: $grey-color-light;
       a {
-        color: #fff;
+        color: $text-color;
         font-weight: normal;
         display: block;
         border: (4/14)*1em solid transparent;
@@ -42,26 +40,22 @@
         padding-right: $spacing-unit/2 - (4/14)*1em;
         &:hover, &:focus, &.active {
           outline: none;
-          background-color: $grey-color-dark;
+          background-color: $grey-color-light;
         }
         &:focus {
-          border-color: $grey-color-light;
+          border-color: $grey-color-dark;
         }
       }
     }
     &:target {
+      max-height: 300px;
       ol{
         position: relative;
         z-index: 10;
       }
-      max-height: 300px;
-    }
-    @media screen and (min-width: (400/16)*1em) {
-      margin-left: auto;
     }
     @media screen and (min-width: (700/16)*1em) {
       padding-top: 0;
-      max-width: none;
       max-height: none;
       ol {
         padding-left: (214/$base-font-size)*1em;
@@ -74,6 +68,7 @@
       li {
         display: inline;
         border: none;
+        background-color: transparent;
         a {
           display: inline-block;
         }
@@ -89,13 +84,17 @@
   right: 0;
   z-index: 1;
   float: right;
-  color: #fff !important;
+  color: $text-color !important;
   font-size: (14/$base-font-size)*1em;
   font-weight: normal;
   text-transform: uppercase;
   text-decoration: none !important;
   letter-spacing: 1px;
   padding: 1.1em $spacing-unit/1.6 0.9em;
+  background-color: rgba($background-color, 0.75);
+  .enhanced & {
+    background-color: transparent;
+  }
   &::before {
     content: '';
     display: block;
@@ -110,7 +109,9 @@
     background-size: cover;
   }
   @media screen and (min-width: (700/16)*1em) {
-    display: none;
+    .enhanced & {
+      display: none;
+    }
   }
 }
 
@@ -125,10 +126,12 @@
   padding: 0;
   display: none;
   cursor: default;
-  .navigation:target & {
+  .enhanced .navigation:target & {
     display: block;
   }
   @media screen and (min-width: (700/16)*1em) {
-    display: none !important;
+    .enhanced & {
+      display: none !important;
+    }
   }
 }
