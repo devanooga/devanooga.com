@@ -64,12 +64,14 @@
         z-index: 1;
       }
       &:target ol {
-        z-index: 1;
+        z-index: 3;
       }
       li[data-menu-group="1"] {
         display: inline;
         border: none;
         background-color: transparent;
+        position: relative;
+        z-index: 3;
         a {
           display: inline-block;
         }
@@ -82,6 +84,7 @@
         border-top: 1px solid $grey-color-light;
         clear: both;
         display: none;
+        position: relative;
         & + [data-menu-group="2"] {
           border-top: none;
           margin-top: 0;
@@ -89,6 +92,7 @@
       }
       &:target li[data-menu-group="2"] {
         display: block;
+        z-index: 10;
       }
     }
     @media screen and (min-width: (870/16)*1em) {
@@ -97,6 +101,7 @@
       }
       li[data-menu-group="2"], &:target li[data-menu-group="2"] {
         border: none;
+        z-index: 1;
         margin-top: 0;
         margin-right: 0;
         width: auto;
@@ -181,7 +186,13 @@
   }
   @media screen and (min-width: (720/16)*1em) {
     .enhanced & {
-      z-index: 2;
+      position: absolute;
+      z-index: 3;
+      left: initial;
+      bottom: initial;
+      width: (120/$base-font-size)*1em;
+      height: (50/$base-font-size)*1em;
+      cursor: pointer;
     }
   }
   @media screen and (min-width: (870/16)*1em) {
