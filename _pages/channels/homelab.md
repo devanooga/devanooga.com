@@ -6,11 +6,11 @@ permalink: /channels/homelab/
 parent: channels
 ---
 
-A place for people have 
+A place for people that have (or are looking to have) a personal lab set up, usually for education or more amateur setups. For people looking to learn, explore and show off their labs. 
 
 ### Free/Cheap opportunities
 
-The following is a list of software/hardware opportunities that are either free or realtively cheap compared to purchasing the product yourself, these are usually for lab/training only, please check the licensing terms.
+The following is a list of software/hardware opportunities that are either free or relatively cheap compared to purchasing the product yourself, these are usually for lab/training only, please check the licensing terms.
 
 #### Backup
 
