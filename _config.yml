@@ -1,5 +1,6 @@
 # Site settings
 title: devanooga
+tagline: "A community of tinkerers in and around Chattanooga, TN"
 url: "https://devanooga.com"
 twitter_username: devanooga
 github_username:  devanooga
@@ -7,3 +8,6 @@ github_username:  devanooga
 # Build settings
 markdown: kramdown
 include: ['_pages']
+
+gems:
+  - jekyll-sitemap
