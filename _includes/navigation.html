@@ -20,4 +20,11 @@
     container.appendChild(nav);
     header.className += ' enhanced';
   })(window, document);
+
+  (function (window, document) {
+    var close_button = document.getElementsByClassName('navigation--close')[0];
+    close_button.addEventListener('click', function go_back (event) {
+      window.history.back();
+    });
+  })(window, document);
 </script>
