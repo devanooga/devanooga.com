@@ -1,11 +1,15 @@
 <nav id="navigation" class="navigation">
   <ol class="navigation--items">
-    {% for page in site.pages %}
-      {% if page.title %}
-      <li>
-        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-      </li>
-      {% endif %}
+    {% assign groups = (site.pages | sort: "menu_group" | group_by: "menu_group") %}
+    {% for group in groups %}
+      {% assign pages = (group.items | sort: "menu_sort") %}
+      {% for page in pages %}
+        {% if page.menu_group %}
+        <li data-menu-group="{{ page.menu_group }}">
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </ol>
   <a href="#header" class="navigation--close"><span class="sr-only">Back to content</span></a>
