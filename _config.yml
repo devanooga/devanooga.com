@@ -8,3 +8,6 @@ github_username:  devanooga
 # Build settings
 markdown: kramdown
 include: ['_pages']
+
+gems:
+  - jekyll-sitemap

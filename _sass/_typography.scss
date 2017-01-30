@@ -1,0 +1,24 @@
+h1, h2, h3, h4, h5, h6 {
+  main & {
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0;
+  }
+  main * + & {
+    margin-top: 1.6em;
+  }
+  main header & {
+    font-size: 1.4em;
+  }
+}
+
+p {
+  margin: 0;
+  p + &, ol + &, ul + &, aside + &, blockquote + &,
+  h1 + &, h2 + &, h3 + &, h4 + &, h5 + &, h6 + & {
+    margin-top: (12/$base-font-size)*1em;
+  }
+  main header & {
+    margin-top: 0;
+  }
+}

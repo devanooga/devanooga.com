@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
   <body>
-
     {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
+    <main class="wrapper">
+      {{ content }}
+    </main>
+    {% include navigation.html %}
     {% include footer.html %}
     {% include ga.html %}
-
+    {% include google-fonts.html %}
+    {% include stylesheets-main.html %}
   </body>
-
 </html>
