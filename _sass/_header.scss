@@ -1,0 +1,14 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  height: (50/$base-font-size)*1em;
+  width: 100%;
+  &.enhanced {
+    background-color: rgba($background-color, 0.75);
+  }
+  a {
+    font-style: normal;
+    text-decoration: none;
+  }
+}
