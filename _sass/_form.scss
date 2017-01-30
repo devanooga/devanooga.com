@@ -1,0 +1,53 @@
+form {
+    label {
+        padding: 2px;
+    }
+
+    input, textarea {
+        background-color: #fafafa;
+        border: solid 1px #a0a0a0;
+        border-radius: 6px;
+        padding: 2px;
+    }
+
+    input[type=submit] {
+        cursor: pointer;
+        font-weight: bold;
+        margin: .1rem 0;
+    }
+}
+
+.contact-us {
+    margin: 0 auto;
+    width: 30rem;
+
+    div:last-child {
+        text-align: center;
+    } 
+
+    input {
+        height: 1.2rem;
+    }
+
+    textarea {
+        height: 8rem;
+    }
+
+    input, textarea {
+        margin: .25rem 0;
+        width: 22rem;
+    }
+
+    input[type=submit] {
+        height: 1.75rem;
+        margin: 0 auto;
+    }
+
+    label {
+        display: inline-block;
+        margin: .1rem .1rem;
+        text-align: right;
+        vertical-align: top;
+        width: 6rem;
+    }
+}
