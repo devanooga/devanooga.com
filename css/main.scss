@@ -6,16 +6,16 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
+$base-font-family: 'Asap', sans-serif;
+$base-font-size:   18;
+$small-font-size:  $base-font-size * 0.875px;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:     1.6em;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color:       #232323;
+$background-color: #fafafa;
+$brand-color:      #E0644F;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -47,6 +47,10 @@ $on-laptop:        800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
+        "typography",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "header",
+        "navigation",
+        "logo"
 ;
