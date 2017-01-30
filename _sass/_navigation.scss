@@ -54,18 +54,59 @@
         z-index: 10;
       }
     }
-    @media screen and (min-width: (700/16)*1em) {
+    @media screen and (min-width: (720/16)*1em) {
       padding-top: 0;
       max-height: none;
       ol {
         padding-left: (214/$base-font-size)*1em;
+        padding-right: (120/$base-font-size)*1em;
         text-align: right;
-        z-index: 3;
+        z-index: 1;
       }
       &:target ol {
         z-index: 3;
       }
-      li {
+      li[data-menu-group="1"] {
+        display: inline;
+        border: none;
+        background-color: transparent;
+        position: relative;
+        z-index: 3;
+        a {
+          display: inline-block;
+        }
+      }
+      li[data-menu-group="2"] {
+        border-left: 1px solid $grey-color-light;
+        margin-left: auto;
+        margin-right: (-120/$base-font-size)*1em;
+        width: (180/$base-font-size)*1em;
+        border-top: 1px solid $grey-color-light;
+        clear: both;
+        display: none;
+        position: relative;
+        & + [data-menu-group="2"] {
+          border-top: none;
+          margin-top: 0;
+        }
+      }
+      &:target li[data-menu-group="2"] {
+        display: block;
+        z-index: 10;
+      }
+    }
+    @media screen and (min-width: (870/16)*1em) {
+      ol {
+        padding-right: 0;
+      }
+      li[data-menu-group="2"], &:target li[data-menu-group="2"] {
+        border: none;
+        z-index: 1;
+        margin-top: 0;
+        margin-right: 0;
+        width: auto;
+        float: none;
+        clear: none;
         display: inline;
         border: none;
         background-color: transparent;
@@ -92,6 +133,7 @@
   letter-spacing: 1px;
   padding: 1.1em $spacing-unit/1.6 0.9em;
   background-color: rgba($background-color, 0.75);
+  width: (80/14)*1em;
   .enhanced & {
     background-color: transparent;
   }
@@ -108,7 +150,20 @@
     background-size: (21/$base-font-size)*1em (19/$base-font-size)*1em;
     background-size: cover;
   }
-  @media screen and (min-width: (700/16)*1em) {
+  @media screen and (min-width: (720/16)*1em) {
+    .enhanced & {
+      z-index: 1;
+      text-indent: -999em;
+      &::after {
+        content: 'More';
+        display: block;
+        text-indent: 0;
+        float: left;
+        clear: none;
+      }
+    }
+  }
+  @media screen and (min-width: (870/16)*1em) {
     .enhanced & {
       display: none;
     }
@@ -129,7 +184,18 @@
   .enhanced .navigation:target & {
     display: block;
   }
-  @media screen and (min-width: (700/16)*1em) {
+  @media screen and (min-width: (720/16)*1em) {
+    .enhanced & {
+      position: absolute;
+      z-index: 3;
+      left: initial;
+      bottom: initial;
+      width: (120/$base-font-size)*1em;
+      height: (50/$base-font-size)*1em;
+      cursor: pointer;
+    }
+  }
+  @media screen and (min-width: (870/16)*1em) {
     .enhanced & {
       display: none !important;
     }
