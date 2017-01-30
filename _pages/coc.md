@@ -7,8 +7,7 @@ menu_sort: 1
 ---
 
 ## tl;dr
-Follow the golden rule: treat others in the way that you would want to be treated.
-If you have a conflict with another member, or in any way feel harassed, please contact an admin to discuss the situation.
+Follow the golden rule: treat others in the way that you would want to be treated. If you have a conflict with another member, or in any way feel harassed, please contact an admin to discuss the situation.
 
 ## General Conduct
 All devanooga members are expected to follow these guidelines in our community:
