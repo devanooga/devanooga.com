@@ -1,6 +1,6 @@
 <nav id="navigation" class="navigation">
   <ol class="navigation--items">
-    {% assign groups = (site.pages | group_by: "menu_group") %}
+    {% assign groups = (site.pages | sort: "menu_group" | group_by: "menu_group") %}
     {% for group in groups %}
       {% assign pages = (group.items | sort: "menu_sort") %}
       {% for page in pages %}
