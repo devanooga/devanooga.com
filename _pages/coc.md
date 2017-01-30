@@ -30,6 +30,12 @@ devanooga is organized by Chattanooga-area members. We want to foster a communit
 - Administrators will do everything within reason to act transparently. In some cases, it may be necessary (for the privacy of members) to do things "behind closed doors". We will avoid this whenever possible.
 - Administrators can be removed from power. If they violate the CoC, or otherwise intentionally prevent the growth of the community, they can be removed by a majority vote of the other administrators.
 
+## Administrators
+Currently, our Slack Team is administered by the following people:
+- Bobby Burden, @bobby_brb3 on Slack
+- William A, @strangewill on Slack
+- Alfonso Gómez-Arzola, @agarzola on Slack
+
 ## Changes to the Code of Conduct
 This is a living document. If you would like to openly discuss changes to this CoC, we welcome you to do any of the following:
 - Start a dialogue with administrators and the community in the `#general` Slack channel.
