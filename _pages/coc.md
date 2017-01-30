@@ -7,8 +7,7 @@ menu_sort: 1
 ---
 
 ## tl;dr
-Follow the golden rule: treat others in the way that you would want to be treated.
-If you have a conflict with another member, or in any way feel harassed, please contact an admin to discuss the situation.
+Follow the golden rule: treat others in the way that you would want to be treated. If you have a conflict with another member, or in any way feel harassed, please contact an admin to discuss the situation.
 
 ## General Conduct
 All devanooga members are expected to follow these guidelines in our community:
@@ -30,6 +29,12 @@ devanooga is organized by Chattanooga-area members. We want to foster a communit
 - Administrators never act alone. Every action taken by an administrator is discussed with the larger group of admins before the action is taken.
 - Administrators will do everything within reason to act transparently. In some cases, it may be necessary (for the privacy of members) to do things "behind closed doors". We will avoid this whenever possible.
 - Administrators can be removed from power. If they violate the CoC, or otherwise intentionally prevent the growth of the community, they can be removed by a majority vote of the other administrators.
+
+## Administrators
+Currently, our Slack Team is administered by the following people:
+- Bobby Burden, @bobby_brb3 on Slack
+- William Roush, @strangewill on Slack
+- Alfonso Gómez-Arzola, @agarzola on Slack
 
 ## Changes to the Code of Conduct
 This is a living document. If you would like to openly discuss changes to this CoC, we welcome you to do any of the following:
