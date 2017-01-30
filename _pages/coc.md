@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Code of Conduct
-permalink: /coc/
+permalink: /code-of-conduct/
 ---
 
 ## tl;dr
@@ -47,4 +47,4 @@ We ask that users keep these additional rules in mind when using the devanooga S
 - Try to find a relevant channel for a topic of discussion. For example, don't talk about your latest trip to the gun range in `#ruby`.
 - Political, religious, and otherwise sensitive or controversial discussions are welcome, but we ask that users keep such topics out of the #general and #random channels.
 - Users are welcome to create new channels for any topic. Administrators _may_ remove a channel if it is determined that it violates our CoC.
-- Bots are discouraged. If you would like to create a bot, please limit it to only one channel. Keep in mind that most users are wanting to interact with other people, not robots. We may remove bots if they are abused in any way.
+- Bots that provide information relevant to a channel, or provide some utility to a channel or the organization are encouraged. Bots that exist only as a joke or to provide content that could reasonably be considered spam are actively discouraged, and may be deleted.
