@@ -12,7 +12,7 @@
     text-decoration: none;
   }
   .wrapper {
-    max-width: -webkit-calc(#{$content-width * 1.4} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width * 1.4} - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc(#{$content-width * 1.2} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width * 1.2} - (#{$spacing-unit} * 2));
   }
 }
