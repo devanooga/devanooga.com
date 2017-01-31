@@ -4,6 +4,9 @@
   <body>
     {% include skip-to-content-link.html %}
     {% include header.html %}
+    {% if page.quilt %}
+    {% include quilt.html %}
+    {% endif %}
     <main id="main-content" class="wrapper {{page.layout_modifier}}">
       {{ content }}
     </main>
