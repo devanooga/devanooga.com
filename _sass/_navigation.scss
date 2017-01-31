@@ -16,7 +16,7 @@
       font-size: (14/$base-font-size)*1em;
       font-weight: 500;
       text-transform: uppercase;
-      padding: (1em - (4/14)*1em) ($spacing-unit - (4/14)*1em);
+      padding: (1em - (4/14)*1em) (18/14*$spacing-unit);
       color: inherit;
     }
   }
@@ -36,8 +36,6 @@
         font-weight: normal;
         display: block;
         border: (4/14)*1em solid transparent;
-        padding-left: $spacing-unit/2 - (4/14)*1em;
-        padding-right: $spacing-unit/2 - (4/14)*1em;
         &:hover, &:focus, &.active {
           outline: none;
           background-color: $grey-color-light;
@@ -74,13 +72,15 @@
         z-index: 3;
         a {
           display: inline-block;
+          padding-left: $spacing-unit/2 - (4/14)*1em;
+          padding-right: $spacing-unit/2 - (4/14)*1em;
         }
       }
       li[data-menu-group="2"] {
         border-left: 1px solid $grey-color-light;
         margin-left: auto;
         margin-right: (-120/$base-font-size)*1em;
-        width: (180/$base-font-size)*1em;
+        width: (200/$base-font-size)*1em;
         border-top: 1px solid $grey-color-light;
         clear: both;
         display: none;
@@ -112,6 +112,8 @@
         background-color: transparent;
         a {
           display: inline-block;
+          padding-left: $spacing-unit/2 - (4/14)*1em;
+          padding-right: $spacing-unit/2 - (4/14)*1em;
         }
       }
     }
