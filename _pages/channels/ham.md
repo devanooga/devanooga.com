@@ -8,6 +8,16 @@ parent: channels
 
 Discussions about Amateur Radio in the Chattanooga area.
 
+### APRS
+
+[APRS](http://www.aprs.org) - Automatic Packet Reporting System
+
+[APRS.fi](http://aprs.fi) - APRS on Google Maps
+
+[SMS Gateway](http://smsgte.wixsite.com/smsgte) - A gateway between SMS and APRS messages
+
+[Mobilinkd](https://store.mobilinkd.com) - Bluetooth TNC for connecting your phone to your radio. Great for APRS and other digital modes.
+
 ### 2M Repeaters
 
 | Frequency | Offset  | PL Tone | Call   | Notes|
