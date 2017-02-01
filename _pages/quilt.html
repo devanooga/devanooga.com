@@ -1,0 +1,16 @@
+---
+layout: json
+permalink: /members/quilt/
+---
+{% assign members = (site.data.members) %}
+[
+{% for member_hash in members %}
+  {
+    {% assign member = member_hash[1] %}
+    "name": "{{ member.name }}",
+    "slack_username": "{{ member_hash[0] }}",
+    "gravatar": "{{ member.gravatar }}"
+  }
+  {% unless forloop.last %},{% endunless %}
+{% endfor %}
+]
