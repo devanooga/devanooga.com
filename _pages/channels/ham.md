@@ -18,7 +18,7 @@ Discussions about Amateur Radio in the Chattanooga area.
 
 [Mobilinkd](https://store.mobilinkd.com) - Bluetooth TNC for connecting your phone to your radio. Great for APRS and other digital modes.
 
-### 2M Repeaters
+### 2m Repeaters
 
 | Frequency | Offset  | PL Tone | Call   | Notes|
 |-----------|---------|---------|--------|------|
