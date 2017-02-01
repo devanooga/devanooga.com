@@ -8,6 +8,14 @@ parent: channels
 
 Discussions about Amateur Radio in the Chattanooga area.
 
+### Getting On the Air
+
+[HamStudy](https://hamstudy.org) - Practice for your Technician, General, or Extra class tests
+
+[W6LG on YouTube](https://www.youtube.com/channel/UCqdSuVdJhxb0H4OAXB7ljNw) - YouTube channel for begginer hams
+
+[Miklor](http://miklor.com) - Resource for entry-level HTs (Baofeng, Wouxon, Leixen, etc)
+
 ### APRS
 
 [APRS](http://www.aprs.org) - Automatic Packet Reporting System
