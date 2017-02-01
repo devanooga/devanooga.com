@@ -1,114 +1,60 @@
-<section id="quilt" class="quilt">
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-  <figure>
-    <img src="http://placehold.it/100x100" alt="Person’s portrait">
-    <figcaption>Person’s name</figcaption>
-  </figure>
-</section>
+<script>
+  (function (window, document) {
+    var container = document.createElement('section');
+    container.id = 'quilt';
+    container.className = 'quilt';
+    var header = document.getElementById('header');
+    header.parentNode.insertBefore(container, header.nextSibling);
+
+    var req = new XMLHttpRequest();
+    req.addEventListener('load', handle_response);
+    req.addEventListener('error', handle_error);
+    req.addEventListener('abort', handle_abort);
+    req.open('GET', '/members/quilt');
+    req.send();
+
+    function handle_response (event) {
+      if (!this.responseText) { return; }
+      var members = shuffle(JSON.parse(this.responseText));
+      for (var i = 0; i < 30 && i < members.length; i++) {
+        var article = document.createElement('article');
+        // article.id = members[i].gravatar;
+        article.setAttribute('data-name', members[i].name);
+        article.setAttribute('style', 'background-image:url("https://www.gravatar.com/avatar/' + members[i].gravatar + '?s=400&d=identicon");');
+        for (var n = 0; n < 10; n++) {
+          container.appendChild(article.cloneNode(true));
+        }
+        if (i === members.length - 1) {
+          container.appendChild(container.nextSibling);
+        }
+      };
+    }
+
+    function handle_error (event) {
+      console.error(event.message);
+    }
+
+    function handle_abort (event) {
+      console.error(event.message);
+    }
+
+    function shuffle(array) {
+      var currentIndex = array.length, temporaryValue, randomIndex;
+
+      // While there remain elements to shuffle...
+      while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+
+      return array;
+    }
+  })(window, document);
+</script>
