@@ -9,5 +9,10 @@ github_username:  devanooga
 markdown: kramdown
 include: ['_pages']
 
+collections:
+  members:
+    output: false
+    relative_directory: ./_collections/members
+
 gems:
   - jekyll-sitemap
