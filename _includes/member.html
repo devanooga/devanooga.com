@@ -1,0 +1,35 @@
+<li class="member">
+  <img src="https://s.gravatar.com/avatar/{{ member.gravatar }}?s=160&r=g" alt="{{ member.name }}" />
+  <span class="member--name">{{ member.name }}</span>
+  {% if member.profiles %}
+    <ul class="member--links">
+      {% for profile in member.profiles %}
+      <li>
+        {% if profile[0] == 'twitter' %}
+          <a href="https://twitter.com/{{profile[1]}}">Twitter</a>
+        {% endif %}
+
+        {% if profile[0] == 'github' %}
+          <a href="https://github.com/{{profile[1]}}">Github</a>
+        {% endif %}
+
+        {% if profile[0] == 'gitlab' %}
+          <a href="https://gitlab.com/{{profile[1]}}">Gitlab</a>
+        {% endif %}
+
+        {% if profile[0] == 'bitbucket' %}
+          <a href="https://bitbucket.org/{{profile[1]}}">Bitbucket</a>
+        {% endif %}
+
+        {% if profile[0] == 'linkedin' %}
+          <a href="https://linkedin.com/in/{{profile[1]}}">LinkedIn</a>
+        {% endif %}
+
+        {% if profile[0] == 'stackoverflow' %}
+          <a href="https://stackoverflow.com/users/{{profile[1]}}">Stack Overflow</a>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</li>
