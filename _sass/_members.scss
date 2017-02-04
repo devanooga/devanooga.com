@@ -28,6 +28,41 @@
     width: 100%;
     display: block;
   }
+  a.website {
+    position: relative;
+    display: block;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: (160/$base-font-size)*1em;
+    }
+    &:hover::before, &:focus::before {
+      background-color: $text-color;
+      background-color: rgba($text-color, 0.5);
+    }
+    &::after {
+      content: '';
+      display: none;
+      width: (54/$base-font-size)*1em;
+      height: (44/$base-font-size)*1em;
+      position: absolute;
+      z-index: 2;
+      top: (58/$base-font-size)*1em;
+      left: 50%;
+      margin-left: (-27/$base-font-size)*1em;
+      background-image: url('/images/social_icons@1x.png');
+      background-position: center (-44/$base-font-size)*1em;
+      background-size: (54/$base-font-size)*1em auto;
+      background-repeat: no-repeat;
+    }
+    &:hover::after, &:focus::after {
+      display: block;
+    }
+  }
 }
 
 .member--name {
