@@ -11,7 +11,7 @@ menu_sort: 3
 <ul class="members">
 {% assign members = (site.members | sort: 'name') %}
 {% for member in members %}
-{% if member.admin != true %}
+{% if member.organizer != true %}
   {% include member.html %}
 {% endif %}
 {% endfor %}
@@ -26,7 +26,7 @@ menu_sort: 3
 <p class="member_intro">This community really is all about its people (that’s you!), but it’s organized by these fine folks:</p>
 <ul class="members">
   {% for member in members %}
-  {% if member.admin == true %}
+  {% if member.organizer == true %}
     {% include member.html %}
   {% endif %}
   {% endfor %}
