@@ -1,0 +1,39 @@
+<li class="member">
+  {% if member.website %}
+  <a href="{{member.website}}" class="website">
+  {% endif %}
+    <img src="https://s.gravatar.com/avatar/{{ member.gravatar }}?s=160&r=g" alt="{{ member.name }}’s profile picture" />
+    <span class="member--name">{{ member.name }}</span>
+  {% if member.website %}
+  </a>
+  {% endif %}
+  {% if member.profiles %}
+    <ul class="member--links">
+      {% for profile in member.profiles %}
+      <li>
+        {% if profile[0] == 'twitter' %}
+          <a href="https://twitter.com/{{profile[1]}}" class="twitter">Twitter</a>
+
+        {% elsif profile[0] == 'github' %}
+          <a href="https://github.com/{{profile[1]}}" class="github">Github</a>
+
+        {% elsif profile[0] == 'gitlab' %}
+          <a href="https://gitlab.com/{{profile[1]}}" class="gitlab">Gitlab</a>
+
+        {% elsif profile[0] == 'bitbucket' %}
+          <a href="https://bitbucket.org/{{profile[1]}}" class="bitbucket">Bitbucket</a>
+
+        {% elsif profile[0] == 'linkedin' %}
+          <a href="https://linkedin.com/in/{{profile[1]}}" class="linkedin">LinkedIn</a>
+
+        {% elsif profile[0] == 'stackoverflow' %}
+          <a href="https://stackoverflow.com/users/{{profile[1]}}" class="stackoverflow">Stack Overflow</a>
+
+        {% else %}
+          <a href="{{profile[1]}}" class="{{profile[0]}}">{{profile[0]}}</a>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</li>

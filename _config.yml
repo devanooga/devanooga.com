@@ -8,6 +8,7 @@ github_username:  devanooga
 # Build settings
 markdown: kramdown
 include: ['_pages']
+exclude: ['design_files']
 
 collections:
   members:

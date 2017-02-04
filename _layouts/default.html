@@ -3,7 +3,7 @@
   {% include head.html %}
   <body>
     {% include header.html %}
-    <main class="wrapper">
+    <main class="wrapper {{page.layout_modifier}}">
       {{ content }}
     </main>
     {% include navigation.html %}

@@ -1,0 +1,33 @@
+---
+layout: page
+layout_modifier: wide
+title: Members
+permalink: /members/
+menu_group: 1
+menu_sort: 3
+---
+<p class="member_intro"><strong>We welcome tinkerers of every stripe and background!</strong> You don’t have to be a developer to join our community. Just bring your curiosity and enthusiasm for technology. To be featured on this page, <a href="https://github.com/devanooga/devanooga.github.io#submitting-your-member-profile">follow the instructions</a> on this website’s readme.</p>
+
+<ul class="members">
+{% assign members = (site.members | sort: 'name') %}
+{% for member in members %}
+{% if member.organizer != true %}
+  {% include member.html %}
+{% endif %}
+{% endfor %}
+  <li class="member you">
+    <a href="/slack">
+      <img src="/images/you.png" alt="You?">
+      <span class="member--name">Join us!</span>
+    </a>
+  </li>
+</ul>
+<hr>
+<p class="member_intro">This community really is all about its people (that’s you!), but it’s organized by these fine folks:</p>
+<ul class="members">
+  {% for member in members %}
+  {% if member.organizer == true %}
+    {% include member.html %}
+  {% endif %}
+  {% endfor %}
+</ul>
