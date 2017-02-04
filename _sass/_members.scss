@@ -3,19 +3,24 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   @media screen and (min-width: (800/16)*1em) {
     max-width: 72%;
     float: left;
+    justify-content: flex-start;
   }
 }
 
 .member {
   padding: 0;
   position: relative;
-  flex-basis: (120/$base-font-size)*1em;
+  width: (160/$base-font-size)*1em;
+  // min-height: (240/$base-font-size)*1em;
+  flex-basis: (160/$base-font-size)*1em;
   margin: 0 1em 1em 0;
+  display: block;
+  float: left;
   flex-grow: 0;
   flex-shrink: 1;
   // flex-basis: 25%;
@@ -26,7 +31,13 @@
 }
 
 .member--name {
-  // font-size: (14/$base-font-size)*1em;
+  font-size: (14/$base-font-size)*1em;
+  display: block;
+  height: 1.4em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
   // font-style: italic;
   // left: 0;
   // bottom: 0;
