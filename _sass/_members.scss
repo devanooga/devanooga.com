@@ -78,8 +78,43 @@
     width: 100%;
     height: 0;
     padding-top: 80%;
-    &:hover, &:focus {
+    border: (3/$base-font-size)*1em solid transparent;
+    border-radius: (3/$base-font-size)*1em;
+    box-sizing: border-box;
+    background-image: url('/images/social_icons@1x.png');
+    background-position: center top;
+    background-size: (54/$base-font-size)*1em auto;
+    background-repeat: no-repeat;
+    @media screen and (min-resolution: 1.4dppx) {
+      background-image: url('/images/social_icons@2x.png');
+    }
+    @media screen and (min-resolution: 2.4dppx) {
+      background-image: url('/images/social_icons@3x.png');
+    }
+    &.github {
+      background-position: center (-44/$base-font-size)*2em;
+    }
+    &.twitter {
+      background-position: center (-44/$base-font-size)*3em;
+    }
+    &.linkedin {
+      background-position: center (-44/$base-font-size)*4em;
+    }
+    &.bitbucket {
+      background-position: center (-44/$base-font-size)*5em;
+    }
+    &.stackoverflow {
+      background-position: center (-44/$base-font-size)*6em;
+    }
+    &.gitlab {
+      background-position: center (-44/$base-font-size)*7em;
+    }
+    &:hover {
       background-color: #ddd;
+    }
+    &:focus {
+      border-color: $text-color;
+      outline: none;
     }
   }
 }

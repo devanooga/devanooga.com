@@ -6,27 +6,25 @@
       {% for profile in member.profiles %}
       <li>
         {% if profile[0] == 'twitter' %}
-          <a href="https://twitter.com/{{profile[1]}}">Twitter</a>
-        {% endif %}
+          <a href="https://twitter.com/{{profile[1]}}" class="twitter">Twitter</a>
 
-        {% if profile[0] == 'github' %}
-          <a href="https://github.com/{{profile[1]}}">Github</a>
-        {% endif %}
+        {% elsif profile[0] == 'github' %}
+          <a href="https://github.com/{{profile[1]}}" class="github">Github</a>
 
-        {% if profile[0] == 'gitlab' %}
-          <a href="https://gitlab.com/{{profile[1]}}">Gitlab</a>
-        {% endif %}
+        {% elsif profile[0] == 'gitlab' %}
+          <a href="https://gitlab.com/{{profile[1]}}" class="gitlab">Gitlab</a>
 
-        {% if profile[0] == 'bitbucket' %}
-          <a href="https://bitbucket.org/{{profile[1]}}">Bitbucket</a>
-        {% endif %}
+        {% elsif profile[0] == 'bitbucket' %}
+          <a href="https://bitbucket.org/{{profile[1]}}" class="bitbucket">Bitbucket</a>
 
-        {% if profile[0] == 'linkedin' %}
-          <a href="https://linkedin.com/in/{{profile[1]}}">LinkedIn</a>
-        {% endif %}
+        {% elsif profile[0] == 'linkedin' %}
+          <a href="https://linkedin.com/in/{{profile[1]}}" class="linkedin">LinkedIn</a>
 
-        {% if profile[0] == 'stackoverflow' %}
-          <a href="https://stackoverflow.com/users/{{profile[1]}}">Stack Overflow</a>
+        {% elsif profile[0] == 'stackoverflow' %}
+          <a href="https://stackoverflow.com/users/{{profile[1]}}" class="stackoverflow">Stack Overflow</a>
+
+        {% else %}
+          <a href="{{profile[1]}}" class="{{profile[0]}}">{{profile[0]}}</a>
         {% endif %}
       </li>
       {% endfor %}
