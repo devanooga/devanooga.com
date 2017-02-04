@@ -1,0 +1,23 @@
+.members {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.member {
+  padding: 0;
+  position: relative;
+  width: 160px;
+}
+
+.member--name {
+  position: absolute;
+  background-color: $brand-color;
+  color: $background-color;
+  font-size: (14/$base-font-size)*1em;
+  font-style: italic;
+  left: -2px;
+  bottom: -2px;
+  padding: 0 0.4em;
+  border: 2px solid $background-color;
+}
