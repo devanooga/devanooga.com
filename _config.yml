@@ -8,6 +8,12 @@ github_username:  devanooga
 # Build settings
 markdown: kramdown
 include: ['_pages']
+exclude: ['design_files']
+
+collections:
+  members:
+    output: false
+    relative_directory: ./_collections/members
 
 gems:
   - jekyll-sitemap
