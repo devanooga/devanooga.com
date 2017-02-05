@@ -16,6 +16,12 @@ Discussions about Amateur Radio in the Chattanooga area.
 
 [Miklor](http://miklor.com) - Resource for entry-level HTs (Baofeng, Wouxon, Leixen, etc)
 
+### Local Amateur Radio Clubs
+
+[CARC](http://w4am.net) - Chattanooga Amateur Radio Club
+
+[P5 Preparedness](http://www.p5preparedness.com/index.php/56-p5-amateur-radio-club) - A new club focused on new hams and emergency preparedness.
+
 ### APRS
 
 [APRS](http://www.aprs.org) - Automatic Packet Reporting System
