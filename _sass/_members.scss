@@ -145,6 +145,9 @@
     &.gitlab {
       background-position: center (-44/$base-font-size)*7em;
     }
+    &.facebook {
+      background-position: center (-44/$base-font-size)*8em;
+    }
     &:hover {
       background-color: #ddd;
     }
