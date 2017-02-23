@@ -29,6 +29,9 @@
         {% elsif profile[0] == 'stackoverflow' %}
           <a href="https://stackoverflow.com/users/{{profile[1]}}" title="{{member.name}} on Stack Overflow" class="stackoverflow">Stack Overflow</a>
 
+        {% elsif profile[0] == 'facebook' %}
+          <a href="https://facebook.com/{{profile[1]}}" title="{{member.name}} on Facebook" class="facebook">Facebook</a>
+
         {% else %}
           <a href="{{profile[1]}}" title="{{member.name}} on {{profile[0]}}" class="{{profile[0]}}">{{profile[0]}}</a>
         {% endif %}
