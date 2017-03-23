@@ -1,9 +1,10 @@
 # Site settings
 title: devanooga
 tagline: "A community of tinkerers in and around Chattanooga, TN"
+description: "A community of tinkerers in and around Chattanooga, TN"
 url: "https://devanooga.com"
-twitter_username: devanooga
 github_username:  devanooga
+logo: /images/devanooga_logo_red.png
 
 # Build settings
 markdown: kramdown
@@ -15,5 +16,16 @@ collections:
     output: false
     relative_directory: ./_collections/members
 
+twitter:
+  username: devanooga
+
+social:
+  name: devanooga
+  links:
+    - https://twitter.com/devanooga
+    - https://github.com/devanooga
+    - https://www.reddit.com/r/devanooga/
+
 gems:
   - jekyll-sitemap
+  - jekyll-seo-tag
