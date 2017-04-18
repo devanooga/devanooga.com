@@ -5,10 +5,12 @@ description: "A community of tinkerers in and around Chattanooga, TN"
 url: "https://devanooga.com"
 github_username:  devanooga
 logo: /images/devanooga_logo_red.png
+pagination: 5
+excerpt_separator: "<!--excerpt-->"
 
 # Build settings
 markdown: kramdown
-include: ['_pages']
+include: ['_pages','_posts']
 exclude: ['design_files']
 
 collections:

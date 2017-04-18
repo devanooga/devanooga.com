@@ -1,0 +1,25 @@
+---
+title: Blog
+permalink: /blog/
+layout: page
+menu_group: 2
+menu_sort: 3
+---
+
+{% for post in site.posts %}
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+    <div class="article-item">
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+      </header>
+      <section class="post-excerpt" itemprop="description">
+        <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+      </section>
+      <br>
+      <div class="post-meta">
+        <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+        <author>&nbsp; {{ post.author }}</author>
+      </div>
+    </div>
+  </article>
+{% endfor %}
