@@ -5,7 +5,7 @@ form {
 
     input, textarea {
         background-color: #fafbfc;
-        border: 1px solid #d1d5da;
+        border: 1px solid $text-color;
         border-radius: 6px;
         box-sizing: border-box;
         margin-top: 0;
@@ -30,7 +30,7 @@ form {
 
     div:last-child {
         text-align: right;
-    } 
+    }
 
     input {
         height: 1.7rem;
