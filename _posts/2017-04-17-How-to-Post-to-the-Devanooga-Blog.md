@@ -2,7 +2,7 @@
 title: How to Post to the Devanooga Blog
 layout: post
 permalink:
-author: Ryan Maynard
+author: ryanmaynard
 ---
 
 In an attempt to add value to the devanooga community, a few members suggested that a blog be created. If you would like to contribute, here are a few instructions on how you can go about that. 
