@@ -67,9 +67,9 @@
   &:target {
     border: 4px solid $brand-color;
     box-sizing: border-box;
-    transform: scale((160/152)) rotate(-2deg);
+    transform: scale(1.1) rotate(-2deg);
     transform-origin: center center;
-    background-color: #ededed;
+    background-color: #fff;
     a.website::before {
       height: (152/$base-font-size)*1em;
     }
