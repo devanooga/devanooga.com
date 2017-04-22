@@ -1,7 +1,6 @@
 ---
 title: Annoying Mastodon Users with a Bot
 layout: post
-permalink:
 author: Bobby Burden III <bobby@brb3.org>
 ---
 
@@ -20,9 +19,9 @@ service was being flooded by excited Japanese users, sending out their "toots"
 in their native tongue. This caused several users to be very annoyed by their
 timeline suddenly being filled with Hiragana and the like.
 
-I found it annoying that so many people were complaining about the Japanese
-users on Mastodon. Why should they care? Just continue using it like you have
-been, and ignore the toots you can't read.
+It's a bit odd that so many people were complaining about the Japanese users on
+Mastodon. Why should they care? Just continue using it like you have been, and
+ignore the toots you can't read.
 
 I decided to take a tongue-in-cheek approach, and create a translation bot that
 would reply to any toots in Japanese with a translated English version of the
@@ -31,8 +30,8 @@ status.
 #### Translation API
 To get this working, I would need some way of translating the toots. I decided
 to go with [Microsoft's Translator API][translator-api]. It's not very accurate
-for Japanese, so I decided to poke fun at this by using a Clippy image as the
-bot's avatar.
+for Japanese (or at least, it doesn't seem to be), so I decided to poke fun at
+this by using a Clippy image as the bot's avatar.
 
 ![Clippy]({{ site.url }}/images/blog/clippy.jpg)
 
@@ -46,7 +45,7 @@ Mastodon privdes a nice Ruby gem on their [github][mastodon-api]. It's
 connect to a Mastodon instance, you need to authenticate as a user via Oauth.
 This would normally be handled whenever a user connects to your "Mastodon app",
 but since we are just building a bot (and not acting on behalf of a user) we
-just need the Ruby script to have a token to toot as our translation bot's
+just need the Ruby script to use a token to toot as our translation bot's
 mastodon account.
 
 To setup the Oauth tokens:
@@ -97,11 +96,11 @@ Now we'll add some methods to handle the interaction with the Microsoft
 Translator API.
 
 ```ruby
-# Gets an access totken for the Translator API
+# Gets an access token for the Translator API
 def get_token(translator_token)
   token_url = "https://api.cognitive.microsoft.com/sts/v1.0/issueToken"
   response = Curl.post(token_url) do |response|
-    response.headers['Ocp-Apim-Subscription-key'] = azure_key
+    response.headers['Ocp-Apim-Subscription-key'] = translator_token
   end
 
   return response.body_str
@@ -184,6 +183,19 @@ japanese_toots.each do |toot|
 end
 ```
 
+You can see the completed script in [this gist][gist].
+
+I wrote a slightly different version of this script that bulls in the tokens
+from a JSON file, and also continuously loops to toot out replies to new
+statuses as they come in. If you'd like to take a look at that script, check
+it out in [this repo][translator-bot].
+
+### In action
+
+I ran this bot for a few days under the handle
+[@japanesetranslator][translator]. It seemed to annoy quite a few instance
+admins, since it sent out so many toots. So be warned that if you run a simliar
+bot, you might get your bot or your instance banned. Have fun!
 
 
 [mastodon]: https://mastodon.social/about
@@ -193,3 +205,6 @@ end
 [gem-docs]: http://www.rubydoc.info/gems/mastodon-api/Mastodon
 [mastodon-cloud]: https://mastodon.cloud/
 [tinysubversions]: https://tinysubversions.com/notes/mastodon-bot/
+[gist]: https://gist.github.com/brb3/e26bedb15b4e0ddf22645874ce5ba164 
+[translator-bot]: https://github.com/brb3/translator-bot 
+[translator]: https://mastodon.cloud/@japanesetranslator
