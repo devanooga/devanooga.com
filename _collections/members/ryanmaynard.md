@@ -9,5 +9,5 @@ profiles:
   linkedin: boryanmaynard
 roles:
   - contributor
-  - blogger
+  - writer
 ---
