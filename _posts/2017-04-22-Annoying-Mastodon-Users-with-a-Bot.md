@@ -2,7 +2,7 @@
 title: Annoying Mastodon Users with a Bot
 layout: post
 permalink:
-author: Bobby Burden III <bobby@brb3.org>
+author: bobby_brb3 
 date: 2017-04-22
 ---
 
