@@ -8,4 +8,6 @@ profiles:
   bitbucket: agarzola
   twitter: agarzola
   linkedin: agarzola
+roles:
+  - contributor
 ---

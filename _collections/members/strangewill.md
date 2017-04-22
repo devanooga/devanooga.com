@@ -10,4 +10,6 @@ profiles:
   twitter: strangewill
   linkedin: williamroush
   stackoverflow: 713907
+roles:
+  - contributor
 ---
