@@ -165,8 +165,8 @@
   text-align: right;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 0.7em;
-  letter-spacing: (1/$base-font-size) * 1em;
+  font-size: 0.8em;
+  letter-spacing: (1/($base-font-size * 0.8)) * 1em;
   line-height: 1.4em;
   color: white;
   position: absolute;
@@ -183,10 +183,11 @@
     }
   }
   .member--badge {
-    padding: 0.1em 0.4em 0.1em;
+    padding: 0.1em 0.35em 0;
     background-color: $grey-color;
     border-radius: 2px;
     border: 1px solid $grey-color-dark;
+    font-family: $mono-font-family;
     &.contributor {
       background-color: $blue-color;
     }
