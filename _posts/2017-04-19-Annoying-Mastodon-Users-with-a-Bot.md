@@ -7,7 +7,8 @@ author: Bobby Burden III <bobby@brb3.org>
 
 Because of the recent influx of Japanese users on Mastodon, I wrote a bot to
 translate their toots to English. In doing so, I was able to annoy a large
-portion of the Mastodon user base unintentionally.
+portion of the Mastodon user base unintentionally. If you're interested in
+learning a bit about writing a Mastodon bot, read on.
 
 <!--excerpt-->
 
@@ -54,7 +55,7 @@ bot's instance.
 2. Create your secret token with this [this tool][tinysubversions]. 
 3. Hang onto the generated `access_token`.
 
-### Getting started
+### Writing the Bot
 
 First, let's get a Gemfile in place:
 ```ruby
@@ -91,6 +92,99 @@ class String
   end
 end
 ```
+
+Now we'll add some methods to handle the interaction with the Microsoft
+Translator API.
+
+```ruby
+# Gets an access totken for the Translator API
+def get_token(translator_token)
+  token_url = "https://api.cognitive.microsoft.com/sts/v1.0/issueToken"
+  response = Curl.post(token_url) do |response|
+    response.headers['Ocp-Apim-Subscription-key'] = azure_key
+  end
+
+  return response.body_str
+end
+
+# Connects to the API and translate the toot's content.
+# If there's an issue with the connection, we return `false`
+def translate_toot(toot, token)
+  toot_content = toot.content.without_tags
+  translation_url = 
+    "http://api.microsofttranslator.com/v2/Http.svc/Translate?" +
+    "text=" + toot_content + "&to=en&from=ja"
+
+  begin
+    response = Curl.get(translation_url) do |response|
+      response.headers['Authorization'] = "Bearer " + token
+    end
+  rescue
+    return false
+  end
+
+  if response.status != "200 OK"
+    return false
+  end
+
+  return response.body_str.without_tags
+end
+```
+
+With that in place, we can setup our basic program logic.
+It needs to:
+- Connect to Mastodon and grab some toots to chew on
+- Decide which toots are in Japanese
+- Connect to Microsoft and get a fresh access token
+- Translate the Japanese toots
+- Reply to the Japanese toots with the Translator API translation.
+
+```ruby
+# Connect to mastodon
+mastodon = Mastodon::REST::Client.new(
+  base_url: 'https://mastodon.cloud', bearer_token: mastodon_token
+)
+
+# Grab the 25 most recent toots from the Public Timeline
+toots = mastodon.public_timeline(limit:25)
+
+# Find all of the Japanese toots and translate them
+japanese_toots = []
+token = get_token(translator_token)
+toots.each do |toot|
+  toot_content = toot.content.without_tags
+  if toot_content.japanese?
+    translated = translate_toot(
+      toot, token
+    )
+    if translated
+      japanese_toots << [toot, translated]
+    end
+  end
+end
+
+# Loop through the Japanese toots and start replying
+japanese_toots.each do |toot|
+  begin
+    # toot[1] is the translated content of the toot
+    translated_toot = "English Translation:\n" + toot[1]
+
+    # Make sure we don't go over the maximum toot length
+    if translated_toot.length <= 500
+      # toot[0] is the original toot we are replying to
+      mastodon.create_status(
+        translated_toot,
+        toot[0].id
+      )
+      puts "Tooted @ " + toot[0].account.acct
+    end
+  rescue
+    puts "Failed tooting!"
+  end
+end
+```
+
+
 
 [mastodon]: https://mastodon.social/about
 [ascii]: http://ascii.jp/elem/000/001/465/1465842/
