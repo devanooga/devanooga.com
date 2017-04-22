@@ -1,7 +1,9 @@
 ---
 title: Annoying Mastodon Users with a Bot
 layout: post
+permalink:
 author: Bobby Burden III <bobby@brb3.org>
+date: 2017-04-22
 ---
 
 Because of the recent influx of Japanese users on Mastodon, I wrote a bot to
@@ -33,7 +35,7 @@ to go with [Microsoft's Translator API][translator-api]. It's not very accurate
 for Japanese (or at least, it doesn't seem to be), so I decided to poke fun at
 this by using a Clippy image as the bot's avatar.
 
-![Clippy]({{ site.url }}/images/blog/clippy.jpg)
+![Clippy](/images/blog/annoying-mastadon-users-with-a-bot/clippy.jpg)
 
 To follow along, setup an account with Microsoft, and get a token for the
 translator API.
