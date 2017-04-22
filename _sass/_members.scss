@@ -157,3 +157,58 @@
     clear: both;
   }
 }
+
+.member--badges {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7em;
+  letter-spacing: (1/$base-font-size) * 1em;
+  line-height: 1.4em;
+  color: white;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -3px;
+  pointer-events: none;
+  li {
+    display: block;
+    margin-top: 0;
+    margin-left: auto;
+    & + li {
+      margin-top: 4px;
+    }
+  }
+  .member--badge {
+    padding: 0.1em 0.4em 0.1em;
+    background-color: $grey-color;
+    border-radius: 2px;
+    border: 1px solid $grey-color-dark;
+    &.contributor {
+      background-color: $blue-color;
+    }
+    &.volunteer {
+      background-color: $yellow-color;
+    }
+    &.blogger {
+      background-color: $lilac-color;
+    }
+  }
+  .rest {
+    max-width: 0;
+    display: inline-block;
+    vertical-align: bottom;
+    overflow: hidden;
+    transition-property: max-width;
+  }
+  a:hover ~ &, a:focus ~ &,
+  img:hover ~ &, .member[aria-expanded="true"] & {
+    cursor: default;
+    .rest {
+      max-width: 90%;
+    }
+  }
+}

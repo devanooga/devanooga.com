@@ -3,12 +3,23 @@
   <a href="{{member.website}}" title="{{member.name}}’s website" class="website">
   {% endif %}
     <img src="https://s.gravatar.com/avatar/{{ member.gravatar }}?s=160&r=g" alt="{{ member.name }}’s profile picture" />
-    <span class="member--name">{{ member.name }}</span>
+    <h3 class="member--name">{{ member.name }}</h3>
   {% if member.website %}
   </a>
   {% endif %}
+
+  {% if member.roles %}
+    <ul class="member--badges" aria-label="Roles">
+      {% for role in member.roles %}
+        <li>
+          <span class="member--badge {{ role | slugify }}">{{ role | truncate: 1, "" }}<span class="rest">{{ role | slice: 1, 100 }}</span></span>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
   {% if member.profiles %}
-    <ul class="member--links">
+    <ul class="member--links" aria-label="Profile Links">
       {% for profile in member.profiles %}
       <li>
         {% if profile[0] == 'twitter' %}
