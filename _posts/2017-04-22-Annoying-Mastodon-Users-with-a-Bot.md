@@ -7,9 +7,9 @@ date: 2017-04-22
 ---
 
 Because of the recent influx of Japanese users on Mastodon, I wrote a bot to
-translate their toots to English. In doing so, I was able to annoy a large
-portion of the Mastodon user base unintentionally. If you're interested in
-learning a bit about writing a Mastodon bot, read on.
+translate their toots to English. Unfortunately, this annoyed a large portion of
+the Mastodon user base. If you're interested in learning a bit about writing a
+Mastodon bot, read on.
 
 <!--excerpt-->
 
