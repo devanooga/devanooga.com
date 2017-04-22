@@ -35,7 +35,7 @@ to go with [Microsoft's Translator API][translator-api]. It's not very accurate
 for Japanese (or at least, it doesn't seem to be), so I decided to poke fun at
 this by using a Clippy image as the bot's avatar.
 
-![Clippy](/images/blog/annoying-mastadon-users-with-a-bot/clippy.jpg)
+![Clippy](/images/blog/2017-04-22-annoying-mastadon-users-with-a-bot/clippy.jpg)
 
 To follow along, setup an account with Microsoft, and get a token for the
 translator API.
