@@ -68,7 +68,7 @@ gem 'curb'
 
 Now it's bundle time: `$ bundle install`
 
-And we can setup the basics of our script. This is simple enough that we can
+And we can set up the basics of our script. This is simple enough that we can
 build the entire program in one file. I named mine `bot.rb`, but feel free to be
 more creative with your naming than me.
 
