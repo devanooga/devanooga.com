@@ -1,42 +1,55 @@
 <li id="{{member.slug}}" class="member">
-  {% if member.website %}
-  <a href="{{member.website}}" title="{{member.name}}’s website" class="website">
-  {% endif %}
-    <img src="https://s.gravatar.com/avatar/{{ member.gravatar }}?s=160&r=g" alt="{{ member.name }}’s profile picture" />
-    <span class="member--name">{{ member.name }}</span>
-  {% if member.website %}
-  </a>
-  {% endif %}
-  {% if member.profiles %}
-    <ul class="member--links">
-      {% for profile in member.profiles %}
-      <li>
-        {% if profile[0] == 'twitter' %}
-          <a href="https://twitter.com/{{profile[1]}}" title="{{member.name}} on Twitter" class="twitter">Twitter</a>
+  <div class="member--wrapper">
+    {% if member.website %}
+    <a href="{{member.website}}" title="{{member.name}}’s website" class="website">
+    {% endif %}
+      <img src="https://s.gravatar.com/avatar/{{ member.gravatar }}?s=160&r=g" alt="{{ member.name }}’s profile picture" />
+      <h3 class="member--name">{{ member.name }}</h3>
+    {% if member.website %}
+    </a>
+    {% endif %}
 
-        {% elsif profile[0] == 'github' %}
-          <a href="https://github.com/{{profile[1]}}" title="{{member.name}} on Github" class="github">Github</a>
+    {% if member.roles %}
+      <ul class="member--badges" aria-label="Roles">
+        {% for role in member.roles %}
+          <li>
+            <span class="member--badge {{ role | slugify }}">{{ role | truncate: 1, "" }}<span class="rest">{{ role | slice: 1, 100 }}</span></span>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
 
-        {% elsif profile[0] == 'gitlab' %}
-          <a href="https://gitlab.com/{{profile[1]}}" title="{{member.name}} on Gitlab" class="gitlab">Gitlab</a>
+    {% if member.profiles %}
+      <ul class="member--links" aria-label="Profile Links">
+        {% for profile in member.profiles %}
+        <li>
+          {% if profile[0] == 'twitter' %}
+            <a href="https://twitter.com/{{profile[1]}}" title="{{member.name}} on Twitter" class="twitter">Twitter</a>
 
-        {% elsif profile[0] == 'bitbucket' %}
-          <a href="https://bitbucket.org/{{profile[1]}}" title="{{member.name}} on Bitbucket" class="bitbucket">Bitbucket</a>
+          {% elsif profile[0] == 'github' %}
+            <a href="https://github.com/{{profile[1]}}" title="{{member.name}} on Github" class="github">Github</a>
 
-        {% elsif profile[0] == 'linkedin' %}
-          <a href="https://linkedin.com/in/{{profile[1]}}" title="{{member.name}} on LinkedIn" class="linkedin">LinkedIn</a>
+          {% elsif profile[0] == 'gitlab' %}
+            <a href="https://gitlab.com/{{profile[1]}}" title="{{member.name}} on Gitlab" class="gitlab">Gitlab</a>
 
-        {% elsif profile[0] == 'stackoverflow' %}
-          <a href="https://stackoverflow.com/users/{{profile[1]}}" title="{{member.name}} on Stack Overflow" class="stackoverflow">Stack Overflow</a>
+          {% elsif profile[0] == 'bitbucket' %}
+            <a href="https://bitbucket.org/{{profile[1]}}" title="{{member.name}} on Bitbucket" class="bitbucket">Bitbucket</a>
 
-        {% elsif profile[0] == 'facebook' %}
-          <a href="https://facebook.com/{{profile[1]}}" title="{{member.name}} on Facebook" class="facebook">Facebook</a>
+          {% elsif profile[0] == 'linkedin' %}
+            <a href="https://linkedin.com/in/{{profile[1]}}" title="{{member.name}} on LinkedIn" class="linkedin">LinkedIn</a>
 
-        {% else %}
-          <a href="{{profile[1]}}" title="{{member.name}} on {{profile[0]}}" class="{{profile[0]}}">{{profile[0]}}</a>
-        {% endif %}
-      </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+          {% elsif profile[0] == 'stackoverflow' %}
+            <a href="https://stackoverflow.com/users/{{profile[1]}}" title="{{member.name}} on Stack Overflow" class="stackoverflow">Stack Overflow</a>
+
+          {% elsif profile[0] == 'facebook' %}
+            <a href="https://facebook.com/{{profile[1]}}" title="{{member.name}} on Facebook" class="facebook">Facebook</a>
+
+          {% else %}
+            <a href="{{profile[1]}}" title="{{member.name}} on {{profile[0]}}" class="{{profile[0]}}">{{profile[0]}}</a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
 </li>

@@ -7,4 +7,6 @@ profiles:
   twitter: the_tomrichards
   linkedin: thomasdrichards
   stackoverflow: 609053
+roles:
+  - contributor
 ---

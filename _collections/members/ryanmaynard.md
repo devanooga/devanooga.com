@@ -7,4 +7,7 @@ profiles:
   gitlab: ryanmaynard
   twitter: ryanmaynard00
   linkedin: boryanmaynard
+roles:
+  - contributor
+  - writer
 ---

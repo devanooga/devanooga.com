@@ -7,4 +7,6 @@ profiles:
   twitter: patriotbob83
   linkedin: zech-sloan-8a77717b
   stackoverflow: 1246014
+roles:
+  - contributor
 ---

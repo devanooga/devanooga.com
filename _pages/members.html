@@ -16,10 +16,12 @@ menu_sort: 3
 {% endif %}
 {% endfor %}
   <li class="member you">
-    <a href="/slack">
-      <img src="/images/you.png" alt="You?">
-      <span class="member--name">Join us!</span>
-    </a>
+    <div class="member--wrapper">
+      <a href="/slack">
+        <img src="/images/you.png" alt="You?">
+        <span class="member--name">Join us!</span>
+      </a>
+    </div>
   </li>
 </ul>
 <hr>
@@ -31,3 +33,21 @@ menu_sort: 3
   {% endif %}
   {% endfor %}
 </ul>
+
+<script>
+  (function (window, document) {
+    var members = document.getElementsByClassName('member');
+    for (var i = members.length - 1; i >= 0; i--) {
+      members[i].addEventListener('focus', expand_badges, true);
+      members[i].addEventListener('blur', collapse_badges, true);
+      members[i].addEventListener('mouseover', expand_badges, true);
+      members[i].addEventListener('mouseout', collapse_badges, true);
+    }
+    function expand_badges () {
+      this.setAttribute('aria-expanded', true);
+    }
+    function collapse_badges () {
+      this.removeAttribute('aria-expanded');
+    }
+  })(window, document);
+</script>
