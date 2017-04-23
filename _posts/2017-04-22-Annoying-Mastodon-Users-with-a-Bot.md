@@ -7,9 +7,9 @@ date: 2017-04-22
 ---
 
 Because of the recent influx of Japanese users on Mastodon, I wrote a bot to
-translate their toots to English. Unfortunately, this annoyed a large portion of
-the Mastodon user base. If you're interested in learning a bit about writing a
-Mastodon bot, read on.
+translate their toots to English. This was a useful learning experience, and in
+this post I walk through the process of creating a Ruby script to work with
+Mastodon's API.
 
 <!--excerpt-->
 
@@ -33,7 +33,7 @@ status.
 To get this working, I would need some way of translating the toots. I decided
 to go with [Microsoft's Translator API][translator-api]. It's not very accurate
 for Japanese (or at least, it doesn't seem to be), so I decided to poke fun at
-this by using a Clippy image as the bot's avatar.
+this by using a [Clippy][clippy] image as the bot's avatar.
 
 ![Clippy](/images/blog/2017-04-22-annoying-mastadon-users-with-a-bot/clippy.jpg)
 
@@ -42,8 +42,8 @@ translator API.
 
 ### Mastodon API
 
-Mastodon privdes a nice Ruby gem on their [github][mastodon-api]. It's
-[well documented][gem-docs], and works pretty nicely for this silly task. To
+Mastodon privdes a nice Ruby gem on their [GitHub][mastodon-api]. It's
+[well-documented][gem-docs], and works pretty nicely for this silly task. To
 connect to a Mastodon instance, you need to authenticate as a user via Oauth.
 This would normally be handled whenever a user connects to your "Mastodon app",
 but since we are just building a bot (and not acting on behalf of a user) we
@@ -60,15 +60,18 @@ bot's instance.
 
 First, let's get a Gemfile in place:
 ```ruby
-source 'https://rubygems.org'                                                                                                                                                                                                           
+source 'https://rubygems.org'
 
-gem 'mastodon-api', require: 'mastodon'                                          
-gem 'curb'        
+gem 'mastodon-api', require: 'mastodon'
+gem 'curb'
 ```
 
 Now it's bundle time: `$ bundle install`
 
-And we can setup the basics of our script.
+And we can setup the basics of our script. This is simple enough that we can
+build the entire program in one file. I named mine `bot.rb`, but feel free to be
+more creative with your naming than me.
+
 ```ruby
 #!/usr/bin/env ruby
 require 'mastodon'
@@ -132,7 +135,7 @@ def translate_toot(toot, token)
 end
 ```
 
-With that in place, we can setup our basic program logic.
+With that in place, we can set up our basic program logic.
 It needs to:
 - Connect to Mastodon and grab some toots to chew on
 - Decide which toots are in Japanese
@@ -185,19 +188,30 @@ japanese_toots.each do |toot|
 end
 ```
 
-You can see the completed script in [this gist][gist].
+You can see the completed script in [this gist][gist]. All you need to do to run
+this script is to create the `Gemfile`, run `bundle install`, then add the code
+to your `bot.rb`. Next, you need to make the file executable. On Unix-like
+systems, you can run `chmod +x bot.rb`. Finally, run the script with `./bot.rb`.
 
-I wrote a slightly different version of this script that bulls in the tokens
-from a JSON file, and also continuously loops to toot out replies to new
-statuses as they come in. If you'd like to take a look at that script, check
-it out in [this repo][translator-bot].
+You can also skip the [chmod][chmod] step and run the script with `ruby bot.rb`.
+But I prefer the [shebang][shebang] method (adding the `#!` line at the top of
+the script) since it provides a uniform way of running scripts on your system
+regardless of the language it is written in. With the shebang line in place,
+your shell knows to pass the contents of the file to the `ruby` interpreter to
+process and execute the file.
+
+For simplicity's sake, the script described in this post runs once, then must be
+ran again to fetch 25 new toots. I wrote a slightly different version of it that
+pulls in the tokens from a JSON file, and also continuously loops to toot out
+replies to new statuses as they come in. If you'd like to take a look at that
+script, check it out in [this repo][translator-bot].
 
 ### In action
 
 I ran this bot for a few days under the handle
-[@japanesetranslator][translator]. It seemed to annoy quite a few instance
-admins, since it sent out so many toots. So be warned that if you run a simliar
-bot, you might get your bot or your instance banned. Have fun!
+[@japanesetranslator][translator]. It seemed to annoy a few
+[instance admins][annoy], since it sent out so many toots. So be warned that if
+you run a simliar bot, you might get your bot or your instance banned. Have fun!
 
 
 [mastodon]: https://mastodon.social/about
@@ -210,3 +224,7 @@ bot, you might get your bot or your instance banned. Have fun!
 [gist]: https://gist.github.com/brb3/e26bedb15b4e0ddf22645874ce5ba164 
 [translator-bot]: https://github.com/brb3/translator-bot 
 [translator]: https://mastodon.cloud/@japanesetranslator
+[clippy]: https://en.wikipedia.org/wiki/Office_Assistant
+[chmod]: https://en.wikipedia.org/wiki/Chmod
+[shebang]: https://en.wikipedia.org/wiki/Shebang_(Unix)
+[annoy]: https://cybre.space/users/nightpool/updates/13509
