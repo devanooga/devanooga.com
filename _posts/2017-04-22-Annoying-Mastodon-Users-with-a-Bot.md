@@ -211,7 +211,7 @@ script, check it out in [this repo][translator-bot].
 I ran this bot for a few days under the handle
 [@japanesetranslator][translator]. It seemed to annoy a few
 [instance admins][annoy], since it sent out so many toots. So be warned that if
-you run a simliar bot, you might get your bot or your instance banned. Have fun!
+you run a similar bot, you might get your bot or your instance banned. Have fun!
 
 
 [mastodon]: https://mastodon.social/about
