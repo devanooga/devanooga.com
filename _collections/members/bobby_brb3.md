@@ -9,4 +9,5 @@ profiles:
   linkedin: bobbyrburden
 roles:
 - contributor
+- writer
 ---
