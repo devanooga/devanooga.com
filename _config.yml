@@ -28,6 +28,5 @@ social:
     - https://github.com/devanooga
     - https://www.reddit.com/r/devanooga/
 
-gems:
-  - jekyll-sitemap
-  - jekyll-seo-tag
+sass:
+  style: compressed
