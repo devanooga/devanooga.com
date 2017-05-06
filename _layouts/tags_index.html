@@ -1,0 +1,15 @@
+---
+layout: page
+---
+
+<ul>
+  {% for post in site.posts %}
+  {% for tag in post.tags %}
+  {% if tag == page.tag %}
+  <li class="archive">
+    {% include post-summary.html %}
+  </li>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+</ul>

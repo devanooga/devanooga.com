@@ -8,6 +8,11 @@ logo: /images/devanooga_logo_red.png
 pagination: 5
 excerpt_separator: "<!--excerpt-->"
 
+# Tag-related settings
+tags_dir: /blog/tags
+tag_title_prefix: "Posts tagged &ldquo;"
+tag_title_suffix: "&rdquo;"
+
 # Build settings
 markdown: kramdown
 include: ['_pages','_posts']
