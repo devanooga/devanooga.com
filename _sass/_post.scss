@@ -14,14 +14,21 @@
 
 .post-tag {
   display: inline-block;
-  padding: .25em .4em;
-  font-size: 75%;
-  font-weight: 700;
-  line-height: 1;
-  color: white;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25rem;
-  background-color: $brand-color;
+  a {
+    display: block;
+    padding: .25em .5em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    background-color: $blue-color;
+    &:hover, &:focus {
+      background-color: $grey-color-dark;
+    }
+  }
 }
