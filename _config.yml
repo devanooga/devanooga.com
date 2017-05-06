@@ -13,6 +13,9 @@ markdown: kramdown
 include: ['_pages','_posts']
 exclude: ['design_files']
 
+# Default permalink for _posts
+permalink: /blog/:year/:month/:day/:title.html
+
 collections:
   members:
     output: false
