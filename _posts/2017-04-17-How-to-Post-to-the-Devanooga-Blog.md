@@ -1,12 +1,14 @@
 ---
 title: How to Post to the Devanooga Blog
 layout: post
-permalink:
+permalink: /blog/2017/04/17/how-to-post-to-the-devanooga-blog
 author: ryanmaynard
 tags:
  - blog
  - github
  - jekyll
+redirect_from:
+  - /2017/04/17/how-to-post-to-the-devanooga-blog
 ---
 
 In an attempt to add value to the devanooga community, a few members suggested that a blog be created. If you would like to contribute, here are a few instructions on how you can go about that.
@@ -48,11 +50,11 @@ By default, Jekyll will grab the first fifty words of your post for the excerpt.
 
 #### Markdown
 
-While writing your post, you may need a [quick Markdown syntax refresher][markdownrefresher].  
+While writing your post, you may need a [quick Markdown syntax refresher][markdownrefresher].
 
 #### Github
 
-To add your post, you'll need to fork the [devanooga site repo][devanoogarepo] on Github. If you are uncomfortable with Git, feel free to ask someone for help in the [devanooga slack][devanoogaslack].  
+To add your post, you'll need to fork the [devanooga site repo][devanoogarepo] on Github. If you are uncomfortable with Git, feel free to ask someone for help in the [devanooga slack][devanoogaslack].
 
 #### Directory Structure
 
