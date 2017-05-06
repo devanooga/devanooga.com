@@ -1,2 +1,2 @@
-{% assign author = (site.members | where:"slug",page.author | first) %}
-{% if author.name %} • <a href="/members#{{ author.slug }}" rel="author">{{ author.name }}</a>{% elsif page.author %} • {{ page.author }}{% endif %}
+{% assign author = (site.members | where:"slug",post.author | first) %}
+{% if author.name %} • <a href="/members#{{ author.slug }}" rel="author">{{ author.name }}</a>{% elsif post.author %} • {{ post.author }}{% endif %}
