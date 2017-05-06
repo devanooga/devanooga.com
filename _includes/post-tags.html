@@ -1,9 +1,11 @@
-{% unless tags %}
-{% assign tags = post.tags %}
-{% endunless %}
+{% if tags %}
+  {% assign local_tags = tags | sort %}
+{% elsif post.tags %}
+  {% assign local_tags = post.tags | sort %}
+{% endif %}
 
 <ul class="post-tags-list" aria-label="tags">
-  {% for tag in tags %}
+  {% for tag in local_tags %}
   <li>
     {% include post-tag.html %}
   </li>
