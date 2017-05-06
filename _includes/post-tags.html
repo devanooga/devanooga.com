@@ -1,0 +1,7 @@
+<ul class="post-tags-list" aria-label="tags">
+  {% for tag in post.tags %}
+  <li class="post-tag">
+    <a href="/blog/tags/{{ tag }}">{{ tag }}</a>
+  </li>
+  {% endfor %}
+</ul>
