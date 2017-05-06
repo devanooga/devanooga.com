@@ -2,5 +2,9 @@
 title: Tags
 layout: page
 permalink: /blog/tags/
-summary: page summary
+layout_modifier: tags_page
 ---
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tags = site_tags | split: ',' | sort %}
+
+{% include post-tags.html %}
