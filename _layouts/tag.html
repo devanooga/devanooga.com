@@ -2,9 +2,9 @@
 layout: page
 ---
 
-<ul>
+<ul class="archive-list">
   {% for post in site.tags[page.tag] %}
-  <li class="archive">
+  <li class="archive-list-item">
     {% include post-summary.html %}
   </li>
   {% endfor %}
