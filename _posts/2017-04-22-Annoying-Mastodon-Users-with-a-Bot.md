@@ -8,6 +8,7 @@ tags:
  - mastodon
  - ruby
  - translation
+ - bot
 ---
 
 Because of the recent influx of Japanese users on Mastodon, I wrote a bot to
