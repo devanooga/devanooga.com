@@ -1,9 +1,11 @@
 ---
 title: Annoying Mastodon Users with a Bot
 layout: post
-permalink:
+permalink: /blog/2017/04/22/annoying-mastodon-users-with-a-bot
 author: bobby_brb3 
 date: 2017-04-22
+redirect_from:
+  - /2017/04/22/annoying-mastodon-users-with-a-bot
 ---
 
 Because of the recent influx of Japanese users on Mastodon, I wrote a bot to

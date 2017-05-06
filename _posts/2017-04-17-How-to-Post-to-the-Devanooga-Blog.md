@@ -1,8 +1,10 @@
 ---
 title: How to Post to the Devanooga Blog
 layout: post
-permalink:
+permalink: /blog/2017/04/17/how-to-post-to-the-devanooga-blog
 author: ryanmaynard
+redirect_from:
+  - /2017/04/17/how-to-post-to-the-devanooga-blog
 ---
 
 In an attempt to add value to the devanooga community, a few members suggested that a blog be created. If you would like to contribute, here are a few instructions on how you can go about that. 
