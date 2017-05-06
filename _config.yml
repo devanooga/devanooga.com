@@ -11,7 +11,7 @@ excerpt_separator: "<!--excerpt-->"
 # Build settings
 markdown: kramdown
 include: ['_pages','_posts']
-exclude: ['design_files']
+exclude: ['design_files','vendor']
 
 collections:
   members:
