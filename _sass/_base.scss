@@ -175,6 +175,9 @@ pre {
     }
 }
 
+.clearfix {
+    @extend %clearfix;
+}
 
 
 /**
@@ -205,4 +208,16 @@ pre {
     height:0;
     overflow:hidden;
     text-indent:-9999em;
+}
+
+
+/**
+ * Layout utilities
+ */
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
 }
