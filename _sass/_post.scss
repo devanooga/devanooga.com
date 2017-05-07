@@ -6,6 +6,18 @@
   }
 }
 
+.post-title {
+  margin-top: 0;
+}
+
+.post-date {
+  font-weight: bold;
+}
+
+.post-author {
+  color: $grey-color-dark;
+}
+
 .post-excerpt {
   margin-bottom: 0.6em;
 }
