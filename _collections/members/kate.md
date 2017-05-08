@@ -6,4 +6,6 @@ website: http://www.izellmarketing.com/
 profiles:
   twitter: kateizell
   linkedin: kate-izell-83923957
+roles:
+- contributor
 ---
