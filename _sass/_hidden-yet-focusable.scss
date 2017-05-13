@@ -1,0 +1,21 @@
+.hidden-yet-focusable {
+  display: block;
+  box-sizing: border-box;
+  height: 0;
+  background-color: $yellow-color;
+  color: $text-color;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition-property: height, padding, border-width;
+  &:focus, &:active {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 2.6em;
+    padding: 0.5em 0;
+    outline: none;
+  }
+}
