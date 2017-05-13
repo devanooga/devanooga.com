@@ -16,7 +16,7 @@
     function handle_response (event) {
       if (!this.responseText) { return; }
       var members = shuffle(JSON.parse(this.responseText));
-      for (var i = 30; i >= 0; i--) {
+      for (var i = 29; i >= 0; i--) {
         // Create faux index in case there are fewer than
         // twenty members in the quilt response.
         var faux_index = figure_out_faux_index(members, i);
@@ -28,7 +28,7 @@
         article.setAttribute('style', 'background-image:url("https://www.gravatar.com/avatar/' + members[faux_index].gravatar + '?s=400&d=identicon");');
 
         container.appendChild(article);
-        if (i === 1) {
+        if (i === 0) {
           container.appendChild(container.nextSibling);
         }
       };
