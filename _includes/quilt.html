@@ -16,15 +16,19 @@
     function handle_response (event) {
       if (!this.responseText) { return; }
       var members = shuffle(JSON.parse(this.responseText));
-      for (var i = 0; i < 30 && i < members.length; i++) {
+      for (var i = 30; i => 0; i--) {
+        // Create faux index in case there are fewer than
+        // twenty members in the quilt response.
+        var faux_index = figure_out_faux_index(members, i);
+
+        // Build the member item.
         var article = document.createElement('article');
         // article.id = members[i].gravatar;
-        article.setAttribute('data-name', members[i].name);
-        article.setAttribute('style', 'background-image:url("https://www.gravatar.com/avatar/' + members[i].gravatar + '?s=400&d=identicon");');
-        for (var n = 0; n < 10; n++) {
-          container.appendChild(article.cloneNode(true));
-        }
-        if (i === members.length - 1) {
+        article.setAttribute('data-name', members[faux_index].name);
+        article.setAttribute('style', 'background-image:url("https://www.gravatar.com/avatar/' + members[faux_index].gravatar + '?s=400&d=identicon");');
+
+        container.appendChild(article.cloneNode(true));
+        if (i === 1) {
           container.appendChild(container.nextSibling);
         }
       };
@@ -38,6 +42,9 @@
       console.error(event.message);
     }
 
+    function figure_out_faux_index (members, i) {
+      return members[i] ? i : figure_out_faux_index(members, i - members.length);
+    }
     function shuffle(array) {
       var currentIndex = array.length, temporaryValue, randomIndex;
 
