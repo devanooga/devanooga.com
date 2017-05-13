@@ -7,7 +7,7 @@ permalink: /members/quilt/
 {% for member in members %}
   {
     "name": "{{ member.name }}",
-    "slack_username": "{{ member_hash[0] }}",
+    "username": "{{ member.slug }}",
     "gravatar": "{{ member.gravatar }}"
   }
   {% unless forloop.last %},{% endunless %}

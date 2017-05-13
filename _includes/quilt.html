@@ -27,6 +27,13 @@
         article.setAttribute('data-name', members[faux_index].name);
         article.setAttribute('style', 'background-image:url("https://www.gravatar.com/avatar/' + members[faux_index].gravatar + '?s=180&d=identicon");');
 
+        // Build link to member anchor.
+        var link = document.createElement('a');
+        link.href = '/members#' + members[faux_index].username;
+        link.appendChild(document.createTextNode(members[faux_index].name));
+        article.appendChild(link);
+
+        // Add member to container.
         container.appendChild(article);
         if (i === 0) {
           container.appendChild(container.nextSibling);
