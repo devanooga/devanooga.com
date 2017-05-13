@@ -70,10 +70,8 @@
         display: block;
       }
     }
+    @media (min-width: (1440/16)*1em) {
+      flex-basis: (100/15)*1%;
+    }
   }
-  // @media (min-width: (960/16)*1em) {
-  //   max-width: (960/$base-font-size)*1em;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
 }
