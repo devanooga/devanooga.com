@@ -27,7 +27,7 @@
         article.setAttribute('data-name', members[faux_index].name);
         article.setAttribute('style', 'background-image:url("https://www.gravatar.com/avatar/' + members[faux_index].gravatar + '?s=400&d=identicon");');
 
-        container.appendChild(article.cloneNode(true));
+        container.appendChild(article);
         if (i === 1) {
           container.appendChild(container.nextSibling);
         }
