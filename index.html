@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-<script src="/js/index.js"></script>
-
 <header>
   <p>We are an online community of tinkerers in and around Chattanooga, TN.</p>
   <p><a href="/slack/">Join us on Slack.</a></p>
@@ -17,11 +15,13 @@ layout: default
   <h2>Our resources</h2>
   <p>Our main resource is a <a href="/slack/">Slack Team</a>, where technologists from all around the region come together to share ideas, troubleshoot their projects, learn new things, or just hang out. We keep a relaxed atmosphere in there, but we do expect you to heed our <a href="/code-of-conduct/">Code of Conduct</a> (CoC). If you have any questions about the CoC, feel free to <a href="/contact/">use our contact form</a> to get in touch. You can also ask us on Slack, either publicly in the #general channel, or privately to any of the admins.</p>
 </section>
-<section class="dbox-donation-section">
-  <h2>Donate to devanooga</h2>
-  <p>devanooga is looking to work on many fun projects and events, become a donor today!</p>
-  <div class="dbox-donation-container">
-    <script src="https://donorbox.org/install-popup-button.js" type="text/javascript" defer></script>
-    <a class="dbox-donation-button" href="https://donorbox.org/donate-to-devanooga" style="" >Donate</a>
-  </div>
-</section>
+<script type="text/template" id="dbox-donation-template">
+  <section class="dbox-donation-section">
+    <h2>Donate to devanooga</h2>
+    <p>devanooga is looking to work on many fun projects and events, become a donor today!</p>
+    <div class="dbox-donation-container">
+      <a class="dbox-donation-button" href="https://donorbox.org/donate-to-devanooga" style="" >Donate</a>
+    </div>
+  </section>
+</script>
+<script type="text/javascript" src="/js/donate_section.js"></script>
