@@ -1,6 +1,6 @@
 ---
 name: Thomas Krause
-gravatar: fef4e9f88ed6187a0cd645a678d9e09a
+gravatar: 62ab681bc6aa6eeff91604256603923f
 profiles:
   github: digtk
 roles:
