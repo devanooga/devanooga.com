@@ -13,11 +13,11 @@
 }
 
 .member:target {
-  margin-top: (70/$base-font-size)*-1em;
+  margin-top: (30/$base-font-size)*-1em;
   &::before {
     content: ' ';
     display: block;
-    height: (70/$base-font-size)*1em;
+    height: (30/$base-font-size)*1em;
     width: 1px;
     background: transparent;
   }

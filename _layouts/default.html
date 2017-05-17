@@ -2,8 +2,9 @@
 <html>
   {% include head.html %}
   <body>
+    {% include skip-to-content-link.html %}
     {% include header.html %}
-    <main class="wrapper {{page.layout_modifier}}">
+    <main id="main-content" class="wrapper {{page.layout_modifier}}">
       {{ content }}
     </main>
     {% include footer.html %}

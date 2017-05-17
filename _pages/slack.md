@@ -3,7 +3,7 @@ layout: default
 title: Join us
 permalink: /slack/
 menu_group: 1
-menu_sort: 4
+menu_sort: 3
 ---
 
 
