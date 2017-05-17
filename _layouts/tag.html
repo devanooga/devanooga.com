@@ -1,0 +1,11 @@
+---
+layout: page
+---
+
+<ul class="archive-list">
+  {% for post in site.tags[page.tag] %}
+  <li class="archive-list-item">
+    {% include post-summary.html %}
+  </li>
+  {% endfor %}
+</ul>

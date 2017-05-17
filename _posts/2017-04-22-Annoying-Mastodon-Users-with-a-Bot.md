@@ -2,8 +2,13 @@
 title: Annoying Mastodon Users with a Bot
 layout: post
 permalink: /blog/2017/04/22/annoying-mastodon-users-with-a-bot
-author: bobby_brb3 
+author: bobby_brb3
 date: 2017-04-22
+tags:
+ - mastodon
+ - ruby
+ - translation
+ - bot
 redirect_from:
   - /2017/04/22/annoying-mastodon-users-with-a-bot
 ---
@@ -55,7 +60,7 @@ mastodon account.
 To setup the Oauth tokens:
 1. Create a mastodon account. I used [mastodon.cloud][mastodon-cloud] for my
 bot's instance.
-2. Create your secret token with this [this tool][tinysubversions]. 
+2. Create your secret token with this [this tool][tinysubversions].
 3. Hang onto the generated `access_token`.
 
 ### Writing the Bot
@@ -117,7 +122,7 @@ end
 # If there's an issue with the connection, we return `false`
 def translate_toot(toot, token)
   toot_content = toot.content.without_tags
-  translation_url = 
+  translation_url =
     "http://api.microsofttranslator.com/v2/Http.svc/Translate?" +
     "text=" + toot_content + "&to=en&from=ja"
 
@@ -223,8 +228,8 @@ you run a similar bot, you might get your bot or your instance banned. Have fun!
 [gem-docs]: http://www.rubydoc.info/gems/mastodon-api/Mastodon
 [mastodon-cloud]: https://mastodon.cloud/
 [tinysubversions]: https://tinysubversions.com/notes/mastodon-bot/
-[gist]: https://gist.github.com/brb3/e26bedb15b4e0ddf22645874ce5ba164 
-[translator-bot]: https://github.com/brb3/translator-bot 
+[gist]: https://gist.github.com/brb3/e26bedb15b4e0ddf22645874ce5ba164
+[translator-bot]: https://github.com/brb3/translator-bot
 [translator]: https://mastodon.cloud/@japanesetranslator
 [clippy]: https://en.wikipedia.org/wiki/Office_Assistant
 [chmod]: https://en.wikipedia.org/wiki/Chmod

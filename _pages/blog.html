@@ -1,25 +1,12 @@
 ---
 title: Blog
+summary: <a href="/blog/tags/" class="post-tag float_right" title="View all blog tags">Browse Tags</a>
 permalink: /blog/
 layout: page
 menu_group: 1
 menu_sort: 2
 ---
 
-{% for page in site.posts %}
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-    <div class="article-item">
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ page.url }}" itemprop="url">{{ page.title }}</a></h2>
-      </header>
-      <section class="post-excerpt" itemprop="description">
-        <p>{{ page.excerpt | strip_html | truncatewords: 50 }}</p>
-      </section>
-      <br>
-      <div class="post-meta">
-        <time datetime="{{ page.date | date_to_long_string }}">{{ page.date | date_to_long_string }}</time>
-        <author>{% include author.html %}</author>
-      </div>
-    </div>
-  </article>
+{% for post in site.posts %}
+  {% include post-summary.html %}
 {% endfor %}
