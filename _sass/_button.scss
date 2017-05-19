@@ -33,4 +33,26 @@
   &.button--block {
     display: block;
   }
+
+  &.button--calendar::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin: (5/18)*-1em 0.4em 0 0;
+    width: 1em;
+    height: (20/18)*1em;
+    background-image: url('/images/calendar_icon@1x.png');
+    background-repeat: no-repeat;
+    background-size: 1em auto;
+    background-position: center center;
+    @media (min-resolution: 1.4dppx) {
+      background-image: url('/images/calendar_icon@2x.png');
+    }
+    @media (min-resolution: 2.4dppx) {
+      background-image: url('/images/calendar_icon@3x.png');
+    }
+    .supports-svg & {
+      background-image: url('/images/calendar_icon.svg');
+    }
+  }
 }
