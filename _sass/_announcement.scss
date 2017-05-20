@@ -1,0 +1,14 @@
+.announcement {
+  background-color: lighten($blue-color, 30%);
+  padding: 1.4em;
+  border-radius: 4px;
+  color: darken($blue-color, 35%);
+
+  a:not(.button) {
+    color: inherit;
+  }
+
+  * + & {
+    margin-top: 1.4em;
+  }
+}
