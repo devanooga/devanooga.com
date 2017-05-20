@@ -36,4 +36,16 @@
     right: 100%;
     height: 50px;
   }
+
+  a:focus &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 4px solid $text-color;
+    box-sizing: border-box;
+  }
 }

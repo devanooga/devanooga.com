@@ -8,10 +8,18 @@ logo: /images/devanooga_logo_red.png
 pagination: 5
 excerpt_separator: "<!--excerpt-->"
 
+# Tag-related settings
+tags_dir: /blog/tags
+tag_title_prefix: "Posts tagged &ldquo;"
+tag_title_suffix: "&rdquo;"
+
 # Build settings
 markdown: kramdown
 include: ['_pages','_posts']
 exclude: ['design_files','vendor']
+
+# Default permalink for _posts
+permalink: /blog/:year/:month/:day/:title
 
 collections:
   members:
@@ -28,6 +36,5 @@ social:
     - https://github.com/devanooga
     - https://www.reddit.com/r/devanooga/
 
-gems:
-  - jekyll-sitemap
-  - jekyll-seo-tag
+sass:
+  style: compressed

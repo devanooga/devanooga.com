@@ -1,0 +1,12 @@
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+  <header class="post-header">
+    {% include post-date.html %} • {% include post-author.html %}
+    <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+  </header>
+  <p class="post-excerpt" itemprop="description">
+    {{ post.excerpt | strip_html | truncatewords: 50 }}
+  </p>
+  <footer class="post-meta">
+    {% include post-tags.html %}
+  </footer>
+</article>
