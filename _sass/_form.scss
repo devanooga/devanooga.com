@@ -69,3 +69,50 @@ form {
         margin: .8rem 0 0 0;
     }
 }
+
+.newsletter-signup {
+  max-width: (500/18)*1em;
+  margin: 1em auto 0;
+
+  label {
+    display: block;
+  }
+
+  input {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-width: 0;
+    padding: 0.5em 1.2em;
+    float: left;
+    border: 4px solid $blue-color;
+    width: 100%;
+    box-sizing: border-box;
+    &:focus {
+      outline: none;
+      border-color: darken($blue-color, 35%);
+    }
+  }
+
+  button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: (540/16)*1em) {
+    input {
+      width: 65%;
+      border-radius: $border-radius;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    button {
+      width: 35%;
+      border-radius: $border-radius;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
