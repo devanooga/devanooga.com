@@ -6,7 +6,7 @@ form {
     input, textarea {
         background-color: #fafbfc;
         border: 1px solid $text-color;
-        border-radius: 6px;
+        border-radius: $border-radius;
         box-sizing: border-box;
         margin-top: 0;
         padding: .4rem;
@@ -21,6 +21,13 @@ form {
     input[type=submit] {
         cursor: pointer;
         margin: .1rem 0;
+    }
+
+    input, textarea, select, button {
+      font-family: $base-font-family;
+      font-size: $base-font-size*1px;
+      font-weight: normal;
+      font-style: italic;
     }
 }
 
