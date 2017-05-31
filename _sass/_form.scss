@@ -87,6 +87,7 @@ form {
     border: 4px solid $blue-color;
     width: 100%;
     box-sizing: border-box;
+    margin: 0; // because Safari
     &:focus {
       outline: none;
       border-color: darken($blue-color, 35%);
@@ -98,6 +99,12 @@ form {
     border-top-right-radius: 0;
     width: 100%;
     box-sizing: border-box;
+    white-space: nowrap;
+    margin: 0; // because Safari
+  }
+
+  input, button {
+    vertical-align: top;
   }
 
   @media (min-width: (540/16)*1em) {
