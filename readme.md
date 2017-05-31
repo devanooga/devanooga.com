@@ -20,7 +20,7 @@ And access the application at http://localhost:4000/
 Member data is located under `_collections/members`. Copy an existing profile, name it something unique (preferably using your username on the devanooga Slack) and fill it out using these properties:
 
 - **`name`** (required) Your full name as it should appear on the site.
-- **`gravatar`** (required) Your gravatar hash. [Use this tool to get your gravatar hash.](http://aruljohn.com/gravatar/) _For example, @StrangeWill’s result is `http://www.gravatar.com/avatar/6789f8bd72612e941f9a7ae6f414b2ea?s=48&d=identicon`; the hash is this part: `6789f8bd72612e941f9a7ae6f414b2ea`._
+- **`gravatar`** (required) Your gravatar hash. Gravatar provides a single repository for your internet-wide avatar. We use this to display a picture of you on our members page. [Use this tool](https://en.gravatar.com/site/check/) to get your gravatar hash. After you enter your email address and click the _Check_ button, the tool will display some information below the form. The value you need is the one labeled Email Hash. (For example, @StrangeWill’s email hash is `6789f8bd72612e941f9a7ae6f414b2ea`.)
 - **`website`** (optional) The full URL (including the protocol: `http://` or `https://`) to your website.
 - **`profile:`**
     - **`github`** (optional) Github account name.
