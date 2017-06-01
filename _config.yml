@@ -16,7 +16,7 @@ tag_title_suffix: "&rdquo;"
 # Build settings
 markdown: kramdown
 include: ['_pages','_posts']
-exclude: ['design_files']
+exclude: ['design_files','vendor']
 
 # Default permalink for _posts
 permalink: /blog/:year/:month/:day/:title
