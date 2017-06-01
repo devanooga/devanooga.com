@@ -51,4 +51,9 @@ footer {
     &.wide {
         max-width: (1280/$base-font-size)*1em;
     }
+    &.wrapper--members_page {
+        header {
+            margin-bottom: 1.6em;
+        }
+    }
 }
