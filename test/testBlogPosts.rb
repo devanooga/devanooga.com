@@ -4,7 +4,6 @@ require 'jekyll'
 class TestBlogPosts < Test::Unit::TestCase
 
   def test_authorship
-
     # Load all of the blog post md files, and fill the list of post authors
     post_authors = []
     Dir.foreach('_posts/') do |f|
@@ -13,8 +12,8 @@ class TestBlogPosts < Test::Unit::TestCase
       end
 
       yaml = get_front_matter("_posts/#{f}")
-      assert_not_nil(yaml)
-      assert_not_nil(yaml['author'])
+      assert_not_nil(yaml, "#{f} Does not contain YAML")
+      assert_not_nil(yaml['author'], "#{f} Does not contain an author")
       post_authors << yaml['author']
 
     end
@@ -35,9 +34,8 @@ class TestBlogPosts < Test::Unit::TestCase
 
     # Make sure that the authors each have a member page.
     post_authors.each do |author|
-      assert_true(members.key?(author) || !members.has_value?(author))
+      assert(members.key?(author) || !members.has_value?(author), "#{author} should have a member page, or is using the name of an existing member")
     end
-
   end
 
   def get_front_matter(filename)
