@@ -31,3 +31,11 @@ Member data is located under `_collections/members`. Copy an existing profile, n
     - **`stackoverflow`** (optional) StackOverflow account name.
 
 If you have recommendations for new fields, please submit an issue or a pull request!
+
+# Running tests
+
+Before a PR will be merged, it must be passing tests. We have the best tests, don't we folks?
+
+To run tests in your dev environment, execute `bundle exec rake tests`.
+
+You can create new tests in the `test` directory.
