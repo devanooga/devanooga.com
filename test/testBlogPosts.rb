@@ -12,7 +12,7 @@ class TestBlogPosts < Test::Unit::TestCase
       end
 
       yaml = get_front_matter("_posts/#{f}")
-      assert_not_nil(yaml, "#{f} does not contain YAML")
+      assert_not_nil(yaml, "#{f} does not contain YAML front matter")
       assert_not_nil(yaml['author'], "#{f} does not contain an author")
       post_authors << yaml['author']
 
@@ -26,7 +26,7 @@ class TestBlogPosts < Test::Unit::TestCase
       end
 
       yaml = get_front_matter("_collections/members/#{f}")
-      assert_not_nil(yaml, "#{f} does not contain YAML")
+      assert_not_nil(yaml, "#{f} does not contain YAML front matter")
       assert_not_nil(yaml['name'], "#{f} does not contain a name")
       author_name = f.sub!(/\.md/, '')
       members[author_name] = yaml['name']
