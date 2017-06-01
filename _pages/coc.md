@@ -28,6 +28,7 @@ devanooga is organized by Chattanooga-area members. We want to foster a communit
 
 - Administrators will do everything within reason to act transparently. In some cases, it may be necessary (for the privacy of members) to do things "behind closed doors". We will avoid this whenever possible.
 - Administrators can be removed from power. If they violate the CoC, or otherwise intentionally prevent the growth of the community, they can be removed by a majority vote of the other administrators.
+- Actions taken by administrators are not final and are open to be challenged, at this point administrators will make a group decision regarding the action taken.
 
 ## Administrators
 Currently, our Slack Team is administered by the following people:
