@@ -12,8 +12,8 @@ class TestBlogPosts < Test::Unit::TestCase
       end
 
       yaml = get_front_matter("_posts/#{f}")
-      assert_not_nil(yaml, "#{f} Does not contain YAML")
-      assert_not_nil(yaml['author'], "#{f} Does not contain an author")
+      assert_not_nil(yaml, "#{f} does not contain YAML")
+      assert_not_nil(yaml['author'], "#{f} does not contain an author")
       post_authors << yaml['author']
 
     end
@@ -26,15 +26,15 @@ class TestBlogPosts < Test::Unit::TestCase
       end
 
       yaml = get_front_matter("_collections/members/#{f}")
-      assert_not_nil(yaml)
-      assert_not_nil(yaml['name'])
+      assert_not_nil(yaml, "#{f} does not contain YAML")
+      assert_not_nil(yaml['name'], "#{f} does not contain a name")
       author_name = f.sub!(/\.md/, '')
       members[author_name] = yaml['name']
     end
 
     # Make sure that the authors each have a member page.
     post_authors.each do |author|
-      assert(members.key?(author) || !members.has_value?(author), "#{author} should have a member page, or is using the name of an existing member")
+      assert(members.key?(author) || !members.has_value?(author), "#{author} already has a member profile. Please use the username associated with this member.")
     end
   end
 
