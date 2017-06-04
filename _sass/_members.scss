@@ -27,7 +27,7 @@
     transform: scale(1.1) rotate(-2deg);
     transform-origin: center center;
     background-color: #fff;
-    a.website::before {
+    a.member--website::before {
       height: (152/$base-font-size)*1em;
     }
   }
@@ -50,9 +50,10 @@
     display: block;
     border: none;
   }
-  a.website {
+  a.member--website {
     position: relative;
     display: block;
+    text-decoration: none;
     &::before {
       content: '';
       display: block;

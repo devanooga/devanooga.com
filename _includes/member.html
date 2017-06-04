@@ -1,7 +1,7 @@
 <li id="{{member.slug}}" class="member">
   <div class="member--wrapper">
     {% if member.website %}
-    <a href="{{member.website}}" title="{{member.name}}’s website" class="website">
+    <a href="{{member.website}}" title="{{member.name}}’s website" class="member--website">
     {% endif %}
       <img src="https://s.gravatar.com/avatar/{{ member.gravatar }}?s=160&r=g" alt="{{ member.name }}’s profile picture" />
       <h3 class="member--name">
