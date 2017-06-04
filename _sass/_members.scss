@@ -93,7 +93,7 @@
   font-weight: normal;
   margin-top: 0;
   display: block;
-  height: 2.8em;
+  height: 3.2em;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -102,6 +102,7 @@
 
 .member--username {
   display: block;
+  margin-bottom: 0.2em;
   padding: 0.2em 0.3em 0.3em;
   background-color: $text-color;
   color: $background-color;
