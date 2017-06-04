@@ -92,11 +92,23 @@
   font-weight: normal;
   margin-top: 0;
   display: block;
-  height: 1.4em;
+  height: 2.8em;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   text-align: center;
+}
+
+.member--username {
+  display: block;
+  padding: 0.2em 0.3em 0.3em;
+  background-color: $text-color;
+  color: $background-color;
+  border-bottom-left-radius: .4em;
+  border-bottom-right-radius: 0.4em;
+  &::before {
+    content: '@';
+  }
 }
 
 .member--links {
