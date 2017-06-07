@@ -1,7 +1,7 @@
 ---
 name: William Valadez
 gravatar: 559d3b5759536f7cb83582b68f4d00c5
-members-quilt: false
+members-quilt: true
 profiles:
   github: wvaladez
   twitter: wvaladez
