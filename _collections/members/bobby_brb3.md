@@ -7,6 +7,7 @@ profiles:
   github: brb3
   twitter: bobbyrburden
   linkedin: bobbyrburden
+  keybase: bobby
 roles:
 - contributor
 - writer
