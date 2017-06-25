@@ -47,6 +47,9 @@
           {% elsif profile[0] == 'facebook' %}
             <a href="https://facebook.com/{{profile[1]}}" title="{{member.name}} on Facebook" class="facebook">Facebook</a>
 
+          {% elsif profile[0] == 'keybase' %}
+            <a href="https://keybase.io/{{profile[1]}}" title="{{member.name}} on Keybase" class="keybase">Keybase</a>
+
           {% else %}
             <a href="{{profile[1]}}" title="{{member.name}} on {{profile[0]}}" class="{{profile[0]}}">{{profile[0]}}</a>
           {% endif %}
