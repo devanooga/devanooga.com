@@ -7,4 +7,5 @@ profiles:
   github: elbeavers
   twitter: elbeavers
   linkedin: elbeavers
+  keybase: elbeavers
 ---
