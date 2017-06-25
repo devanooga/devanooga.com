@@ -7,6 +7,7 @@ profiles:
   gitlab: ryanmaynard
   twitter: ryanmaynard00
   linkedin: boryanmaynard
+  keybase: ryanmaynard
 roles:
   - contributor
   - writer
