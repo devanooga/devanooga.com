@@ -1,1 +1,5 @@
-<link rel="stylesheet" href="{{ "/css/header.css" | prepend: site.baseurl }}?v={{ site.time | date_to_xmlschema }}">
+{% capture headerscss %}
+{% include scss/header.scss %}
+{% endcapture %}
+
+<style>{{ headerscss | scssify }}</style>
