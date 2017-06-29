@@ -38,3 +38,5 @@ social:
 
 sass:
   style: compressed
+gems:
+  - jekyll-feed
