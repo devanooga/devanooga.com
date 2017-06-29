@@ -163,6 +163,9 @@
     &.facebook {
       background-position: center (-44/$base-font-size)*8em;
     }
+    &.keybase {
+      background-position: center (-44/$base-font-size)*9em;
+    }
     &:hover {
       background-color: #ddd;
     }
