@@ -26,9 +26,9 @@ Administrators will attempt to resolve the conflict in a manner that is accessib
 ## Conduct of Administrators
 devanooga is organized by Chattanooga-area members. We want to foster a community that is driven and shaped by the members. With that in mind:
 
-- Administrators never act alone. Every action taken by an administrator is discussed with the larger group of admins before the action is taken.
 - Administrators will do everything within reason to act transparently. In some cases, it may be necessary (for the privacy of members) to do things "behind closed doors". We will avoid this whenever possible.
 - Administrators can be removed from power. If they violate the CoC, or otherwise intentionally prevent the growth of the community, they can be removed by a majority vote of the other administrators.
+- Actions taken by administrators are not final and are open to be challenged, at this point administrators will make a group decision regarding the action taken.
 
 ## Administrators
 Currently, our Slack Team is administered by the following people:
@@ -53,5 +53,5 @@ We ask that users keep these additional rules in mind when using the devanooga S
 - Users may not impersonate other users, celebrities, etc.
 - Try to find a relevant channel for a topic of discussion. For example, don't talk about your latest trip to the gun range in `#ruby`.
 - Political, religious, and otherwise sensitive or controversial discussions are welcome, but we ask that users keep such topics out of the `#general` and `#random` channels.
-- Users are welcome to create new channels for any topic. Administrators _may_ remove a channel if it is determined that it violates our CoC.
+- Users are welcome to create new channels for any topic. Administrators _may_ remove a channel if it is determined that it violates our CoC or if the channel is unused and cluttering up our channel list.
 - Bots that provide information relevant to a channel, or provide some utility to a channel or the organization are encouraged. Bots that exist only as a joke or to provide content that could reasonably be considered spam are actively discouraged, and may be deleted.
