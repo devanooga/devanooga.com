@@ -12,6 +12,6 @@ Remember: we're all newbies on one topic or another, so all experience levels ar
 
 This channel is *usually* for less language-specific questions (eg: learning about classes vs. learning about C#), but feel free to ask here anyway.
 
-### Links to various getting started documents
+### Learning resources
 
 [Git Tutorial](https://try.github.io/) - 15 minute Git tutorial for true Git newbies
