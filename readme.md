@@ -2,7 +2,7 @@
 # Requirements
 
 * Ruby
-* Nodejs
+* Bundler
 
 To run the application after pulling:
 
