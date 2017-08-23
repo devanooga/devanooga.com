@@ -7,6 +7,7 @@ profiles:
   github: strangewill
   bitbucket: strangewill
   gitlab: strangewill
+  keybase: strangewill
   twitter: strangewill
   linkedin: williamroush
   stackoverflow: 713907
