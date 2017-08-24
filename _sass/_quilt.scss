@@ -1,0 +1,86 @@
+.quilt {
+  margin-top: 0;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $text-color;
+  article {
+    position: relative;
+    flex-basis: 33%;
+    margin: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &:before {
+      content: '';
+      display: block;
+      height: 0;
+      margin-top: 100%;
+    }
+    &:nth-of-type(1n+10) {
+      display: none;
+    }
+    @media (min-width: (375/16)*1em) {
+      flex-basis: 25%;
+      &:nth-of-type(-1n+12) {
+        display: block;
+      }
+    }
+    @media (min-width: (450/16)*1em) {
+      flex-basis: 20%;
+      &:nth-of-type(-1n+15) {
+        display: block;
+      }
+    }
+    @media (min-width: (550/16)*1em) {
+      flex-basis: 16.6666666666667%;
+      &:nth-of-type(-1n+18) {
+        display: block;
+      }
+    }
+    @media (min-width: (650/16)*1em) {
+      flex-basis: 12.5%;
+      &:nth-of-type(-1n+24) {
+        display: block;
+      }
+    }
+    @media (min-width: (800/16)*1em) {
+      flex-basis: 11.1111111111111%;
+      &:nth-of-type(-1n+27) {
+        display: block;
+      }
+    }
+    @media (min-width: (960/16)*1em) {
+      flex-basis: 10%;
+      flex-grow: 1;
+      flex-shrink: 1;
+      &:nth-of-type(-1n+30) {
+        display: block;
+      }
+    }
+    @media (min-width: (1440/16)*1em) {
+      flex-basis: (100/15)*1%;
+    }
+    a {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: transparent;
+      text-indent: -999em;
+      &:hover, &:focus {
+        background-color: $text-color;
+        background-color: rgba($text-color, 0.5);
+      }
+      &:focus {
+        border: 4px solid $background-color;
+        outline: none;
+      }
+    }
+  }
+}

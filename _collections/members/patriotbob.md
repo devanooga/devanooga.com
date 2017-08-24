@@ -1,6 +1,7 @@
 ---
 name: Zech Sloan
 gravatar: 14cf0662a13e672677f9ad98eb8fcd4b
+members-quilt: true
 profiles:
   github: patriotbob
   bitbucket: patriotbob
