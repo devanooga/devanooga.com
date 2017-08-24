@@ -1,7 +1,7 @@
 ---
 name: Sean Brewer
 gravatar: 675ae635d304f5a8ca0ff0142bb2671e
-member-quilt: true
+members-quilt: true
 website: https://seabre.github.io
 profiles:
   github: seabre
