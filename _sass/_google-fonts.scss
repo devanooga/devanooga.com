@@ -1,0 +1,61 @@
+/* asap-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Asap';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/asap-v6-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Asap Regular'), local('Asap-Regular'),
+       url('/fonts/asap-v6-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/asap-v6-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/asap-v6-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/asap-v6-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/asap-v6-latin-ext_latin-regular.svg#Asap') format('svg'); /* Legacy iOS */
+}
+/* asap-italic - latin-ext_latin */
+@font-face {
+  font-family: 'Asap';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/fonts/asap-v6-latin-ext_latin-italic.eot'); /* IE9 Compat Modes */
+  src: local('Asap Italic'), local('Asap-Italic'),
+       url('/fonts/asap-v6-latin-ext_latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/asap-v6-latin-ext_latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/asap-v6-latin-ext_latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/asap-v6-latin-ext_latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/asap-v6-latin-ext_latin-italic.svg#Asap') format('svg'); /* Legacy iOS */
+}
+/* asap-500 - latin-ext_latin */
+@font-face {
+  font-family: 'Asap';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/asap-v6-latin-ext_latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Asap Medium'), local('Asap-Medium'),
+       url('/fonts/asap-v6-latin-ext_latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/asap-v6-latin-ext_latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/asap-v6-latin-ext_latin-500.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/asap-v6-latin-ext_latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/asap-v6-latin-ext_latin-500.svg#Asap') format('svg'); /* Legacy iOS */
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* Attempt to force use of .svg font file in Chrome. */
+  @font-face {
+    font-family: 'Asap';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/asap-v6-latin-ext_latin-regular.svg#Asap') format('svg');
+  }
+  @font-face {
+    font-family: 'Asap';
+    font-style: italic;
+    font-weight: 400;
+    src: url('/fonts/asap-v6-latin-ext_latin-italic.svg#Asap') format('svg');
+  }
+  @font-face {
+    font-family: 'Asap';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/asap-v6-latin-ext_latin-500.svg#Asap') format('svg');
+  }
+}
