@@ -8,4 +8,4 @@ menu_sort: 2
 quilt: true
 ---
 
-The devanooga community communicates via Slack. If you’re looking for a job or project opportunities in the Chattanooga area, join our Slack Team and hop into the `#opportunities` channel.
+The devanooga community communicates via Slack. If you’re looking for a job or project opportunities in the Chattanooga area, [join our Slack Team](/slack) and hop into the `#opportunities` channel.
