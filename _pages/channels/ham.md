@@ -44,7 +44,9 @@ Discussions about Amateur Radio in the Chattanooga area.
 
 **Good Radios**
 
-[TYT MD-380 (Amazon)](https://www.amazon.com/TYT-MD-380-Moto-TRBO-Radio/dp/B00X6FYWWS) - Great beginner DMR radio
+[TYT MD-380 (Amazon)](https://smile.amazon.com/TYT-MD-380-Moto-TRBO-Radio/dp/B00X6FYWWS) - Great beginner DMR radio
+
+(Wanna help us out? [Set devanooga as your AmazonSmile charity!](https://smile.amazon.com/ch/82-1082043))
 
 **Hacking the MD-380**
 
