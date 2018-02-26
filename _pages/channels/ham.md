@@ -39,6 +39,7 @@ Discussions about Amateur Radio in the Chattanooga area.
 **General Info**
 
 [DMR - How it works](https://www.youtube.com/watch?v=5ZawJek5z9c) - Video intro to DMR
+
 [DMR-MARC](https://www.dmr-marc.net/cgi-bin/trbo-database/register.cgi) - Apply for your DMR ID
 
 **Good Radios**
