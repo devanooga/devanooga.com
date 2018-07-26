@@ -15,6 +15,9 @@ This channel is *usually* for less language-specific questions (eg: learning abo
 ### Learning resources
 
 [DevTube] (https://dev.tube/) - A big collection of developer videos
-[Git Tutorial](https://try.github.io/) - 15 minute Git tutorial for true Git newbies
+
+[Git Tutorial] (https://try.github.io/) - 15 minute Git tutorial for true Git newbies
+
 [Hackterms] (https://www.hackterms.com/) - A crowdsourced dictionary of coding terms
+
 [OpenLibra] (https://openlibra.com/) - Free educational eBooks
