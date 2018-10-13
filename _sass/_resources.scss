@@ -1,0 +1,25 @@
+.resource {
+  clear: both;
+  vertical-align: top;
+
+  a {
+    text-decoration: none;
+  }
+
+  .resource--about {
+    font-size: .8em;
+  }
+
+  .resource--icon {
+    img {
+      border: 1px solid #e8e8e8;
+      height: 50px;
+    }
+  }
+
+  .resource--title {
+    display: inline-flex;
+    float: left;
+    vertical-align: top;
+  }
+}

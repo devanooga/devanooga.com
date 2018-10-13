@@ -1,0 +1,25 @@
+---
+layout: page
+title: Resources
+permalink: /resources/
+menu_group: 2
+menu_sort: 3
+---
+
+<h2>Events</h2>
+{% assign events = (site.resources | where: "type", "events" | sort: 'name') %}
+{% for item in events %}
+{% include resource.html %}
+{% endfor %}
+
+<h2>Education Opportunities</h2>
+{% assign education_opportunities = (site.resources | where: "type", "education" | sort: 'name') %}
+{% for item in education_opportunities %}
+{% include resource.html %}
+{% endfor %}
+
+<h2>Sponsors</h2>
+{% assign sponsors = (site.resources | where: "type", "sponsors" | sort: 'name') %}
+{% for item in sponsors %}
+{% include resource.html %}
+{% endfor %}
