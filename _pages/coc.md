@@ -27,7 +27,7 @@ Administrators will attempt to resolve the conflict in a manner that is accessib
 ## Conduct of Administrators
 devanooga is organized by Chattanooga-area members. We want to foster a community that is driven and shaped by the members. With that in mind:
 
-- {:#admin-transparency} Administrators will do everything within reason to act transparently. In some cases, it may be necessary (for the privacy of members) to do things "behind closed doors". We will avoid this whenever possible.
+- {:#admin-transparency} Administrators will do everything within reason to act transparently. In some cases, it may be necessary (for the privacy of members) to do things "behind closed doors". We will avoid this whenever possible, and will inform the rest of the community when such private deliberation has taken place.
 - {:#admin-removal} Administrators can be removed from power. If they violate the CoC, or otherwise intentionally prevent the growth of the community, they can be removed by a majority vote of the other administrators.
 - {:#admin-challenge} Actions taken by administrators are not final and are open to be challenged, at this point administrators will make a group decision regarding the action taken.
 
