@@ -1,0 +1,10 @@
+.code-of-conduct {
+  li {
+    padding: 2px 5px;
+
+    &:target {
+
+      background-color: #ae81ff;
+    }
+  }
+}
