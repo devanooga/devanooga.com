@@ -13,11 +13,11 @@ Follow the golden rule: treat others in the way that you would want to be treate
 ## General Conduct
 All devanooga members are expected to follow these guidelines in our community:
 
-- {:#condict-offensive-language} Avoid language that is unnecessarily offensive to other users
-- {:#condict-defend} Come prepared to share ideas _and defend them_. We want a place that is fun and thought provoking.
+- {:#conduct-offensive-language} Avoid language that is unnecessarily offensive to other users
+- {:#conduct-defend} Come prepared to share ideas _and defend them_. We want a place that is fun and thought provoking.
 - {:#conduct-tolerance-of-ideas} You may see ideas that are contrary to yours and that is ok.
-- {:#condict-attack-defame-harass} While it is ok to express contrary ideas, it is **NOT** ok to attack, defame, or otherwise harass another member. It **IS** ok (and encouraged) to criticize ideas that you disagree with.
-- {:#condict-positive} Bring a positive attitude to all interactions.
+- {:#conduct-attack-defame-harass} While it is ok to express contrary ideas, it is **NOT** ok to attack, defame, or otherwise harass another member. It **IS** ok (and encouraged) to criticize ideas that you disagree with.
+- {:#conduct-positive} Bring a positive attitude to all interactions.
 - {:#conduct-good-faith} Assume that everyone else is being light-hearted and acting in good faith unless demonstrated otherwise.
 
 ## Conflict Resolution
