@@ -59,7 +59,7 @@ We ask that users keep these additional rules in mind when using the devanooga S
 ## Privacy
 
 - {:#privacy-contact-form} All administrators have access to the contact form submitted on the website.
-- {:#privacy-chat-logs} Administrators do not have access to private chat logs unless shared by a member of the private chat. We keep almost all chat logs indefinitely exclusing the following channels:
+- {:#privacy-chat-logs} Administrators do not have access to private chat logs unless shared by a member of the private chat. We keep almost all chat logs indefinitely excluding the following channels:
   - {:#privacy-chat-logs-politics} `#politics` - 7 days
   - {:#privacy-chat-logs-sandbox} `#sandbox` - 1 day 
 - {:#privacy-admin-email} All administrators have access to the <admin@devanooga.com> e-mail address.
