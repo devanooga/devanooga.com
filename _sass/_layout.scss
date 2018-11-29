@@ -8,9 +8,6 @@ main {
         border-bottom: 1px solid $grey-color-light;
         padding: 0 0 1em;
         @extend %clearfix;
-        h2 {
-            float: left;
-        }
         p {
             font-weight: 500;
         }
@@ -55,5 +52,8 @@ footer {
         header {
             margin-bottom: 1.6em;
         }
+    }
+    &.wrapper--blog_index > header h2 {
+        float: left;
     }
 }
