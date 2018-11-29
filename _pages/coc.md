@@ -27,7 +27,7 @@ Administrators will attempt to resolve the conflict in a manner that is accessib
 ## Conduct of Administrators
 devanooga is organized by Chattanooga-area members. We want to foster a community that is driven and shaped by the members. With that in mind:
 
-- {:#admin-transparency} Administrators will do everything within reason to act transparently. In some cases, it may be necessary (for the privacy of members) to do things "behind closed doors". We will avoid this whenever possible.
+- {:#admin-transparency} Administrators will do everything within reason to act transparently. In some cases, it may be necessary (for the privacy of members) to do things "behind closed doors". We will avoid this whenever possible, and will inform the rest of the community when such private deliberation has taken place.
 - {:#admin-removal} Administrators can be removed from power. If they violate the CoC, or otherwise intentionally prevent the growth of the community, they can be removed by a majority vote of the other administrators.
 - {:#admin-challenge} Actions taken by administrators are not final and are open to be challenged, at this point administrators will make a group decision regarding the action taken.
 
@@ -55,3 +55,11 @@ We ask that users keep these additional rules in mind when using the devanooga S
 - {:#slack-politics-religion} Political, religious, and otherwise sensitive or controversial discussions are welcome, but we ask that users keep such topics out of the `#general` and `#random` channels.
 - {:#slack-new-channels} Users are welcome to create new channels for any topic. Administrators _may_ remove a channel if it is determined that it violates our CoC or if the channel is unused and cluttering up our channel list.
 - {:#slack-bots} Bots that provide information relevant to a channel, or provide some utility to a channel or the organization are encouraged. Bots that exist only as a joke or to provide content that could reasonably be considered spam are actively discouraged, and may be deleted.
+
+## Privacy
+
+- {:#privacy-contact-form} All administrators have access to the contact form submitted on the website.
+- {:#privacy-chat-logs} Administrators do not have access to private chat logs unless shared by a member of the private chat. We keep almost all chat logs indefinitely excluding the following channels:
+  - {:#privacy-chat-logs-politics} `#politics` - 7 days
+  - {:#privacy-chat-logs-sandbox} `#sandbox` - 1 day 
+- {:#privacy-admin-email} All administrators have access to the <admin@devanooga.com> e-mail address.
