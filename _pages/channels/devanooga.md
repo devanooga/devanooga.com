@@ -1,8 +1,8 @@
 ---
 layout: channel
-title: General
-channel: general
-permalink: /channels/general/
+title: Devanooga
+channel: devanooga
+permalink: /channels/devanooga/
 parent: channels
 ---
 
