@@ -1,11 +1,15 @@
 <div class="resource">
-    <a href="{{item.website}}" titl="{{item.name}}" class="resource--icon">
-        <img src="/images/{{item.type}}/{{item.icon}}" alt="{{item.name}}"/>
-    </a>
-    <a href="{{item.website}}" title="{{item.name}}’s website" class="resource--title">
-        <h4>
-            {{item.name}}
-        </h4>
-    </a>
+    <div>
+        <a href="{{item.website}}" titl="{{item.name}}" class="resource--icon">
+            <img src="/images/{{item.type}}/{{item.icon}}" alt="{{item.name}}"/>
+        </a>
+    </div>
+    <div>
+        <a href="{{item.website}}" title="{{item.name}}’s website" class="resource--title">
+            <h4>
+                {{item.name}}
+            </h4>
+        </a>
+    </div>
     <p class="resource--about">{{item.about}}</p>
 </div>

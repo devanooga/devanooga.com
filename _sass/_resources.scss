@@ -1,6 +1,10 @@
 .resource {
   clear: both;
+  //border: solid 1px #ccc;
+  margin: 2%;
+  text-align: center;
   vertical-align: top;
+  width: 41%;
 
   a {
     text-decoration: none;
@@ -12,14 +16,11 @@
 
   .resource--icon {
     img {
-      border: 1px solid #e8e8e8;
-      height: 50px;
+      width: 100px;
     }
   }
 
-  .resource--title {
-    display: inline-flex;
-    float: left;
-    vertical-align: top;
+  .resource--about {
+    //text-align: left;
   }
 }
