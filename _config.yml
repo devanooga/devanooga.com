@@ -41,5 +41,5 @@ social:
 
 sass:
   style: compressed
-plugins:
+gems:
   - jekyll-feed
