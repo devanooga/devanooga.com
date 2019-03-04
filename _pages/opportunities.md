@@ -1,6 +1,6 @@
 ---
 title: Chattanooga IT Community
-summary: devanooga is an online community of tinkerers in and around Chattanooga,&nbsp;TN.
+summary: devanooga is an online community of tinkerers in and around Chattanooga,&nbsp;Tennessee.
 permalink: /opportunities/
 layout: page
 menu_group: 0
