@@ -21,7 +21,7 @@ All devanooga members are expected to follow these guidelines in our community:
 - {:#conduct-good-faith} Assume that everyone else is being light-hearted and acting in good faith unless demonstrated otherwise.
 
 ## Conflict Resolution
-If you or any other member is being treated in a way that violates this CoC, please contact an administrator immediately. You can contact us via slack, the [contact form](/contact/) on this site, or by [email](mailto:admin@devanooga.com).
+If you or any other person is being treated in a way that violates this CoC by a member, please contact an administrator immediately. You can contact us via slack, the [contact form](/contact/) on this site, or by [email](mailto:admin@devanooga.com).
 Administrators will attempt to resolve the conflict in a manner that is accessible to the rest of the devanooga community, such as in a public channel. If open dialogue puts the privacy of one or more of the parties at risk, parts or all of the conflict resolution may be carried out in private.
 
 ## Conduct of Administrators
