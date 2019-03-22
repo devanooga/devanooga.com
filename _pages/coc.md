@@ -13,10 +13,10 @@ Follow the golden rule: treat others in the way that you would want to be treate
 ## General Conduct
 All devanooga members are expected to follow these guidelines in our community:
 
-- {:#conduct-offensive-language} Avoid language that is unnecessarily offensive to other users
+- {:#conduct-offensive-language} Avoid language that is unnecessarily offensive to other people
 - {:#conduct-defend} Come prepared to share ideas _and defend them_. We want a place that is fun and thought provoking.
 - {:#conduct-tolerance-of-ideas} You may see ideas that are contrary to yours and that is ok.
-- {:#conduct-attack-defame-harass} While it is ok to express contrary ideas, it is **NOT** ok to attack, defame, or otherwise harass another member. It **IS** ok (and encouraged) to criticize ideas that you disagree with.
+- {:#conduct-attack-defame-harass} While it is ok to express contrary ideas, it is **NOT** ok to attack, defame, or otherwise harass another person. It **IS** ok (and encouraged) to criticize ideas that you disagree with.
 - {:#conduct-positive} Bring a positive attitude to all interactions.
 - {:#conduct-good-faith} Assume that everyone else is being light-hearted and acting in good faith unless demonstrated otherwise.
 
@@ -27,7 +27,7 @@ Administrators will attempt to resolve the conflict in a manner that is accessib
 ## Conduct of Administrators
 devanooga is organized by Chattanooga-area members. We want to foster a community that is driven and shaped by the members. With that in mind:
 
-- {:#admin-transparency} Administrators will do everything within reason to act transparently. In some cases, it may be necessary (for the privacy of members) to do things "behind closed doors". We will avoid this whenever possible, and will inform the rest of the community when such private deliberation has taken place.
+- {:#admin-transparency} Administrators will do everything within reason to act transparently. In some cases, it may be necessary (for the privacy of people involved) to do things "behind closed doors". We will avoid this whenever possible, and will inform the rest of the community when such private deliberation has taken place.
 - {:#admin-removal} Administrators can be removed from power. If they violate the CoC, or otherwise intentionally prevent the growth of the community, they can be removed by a majority vote of the other administrators.
 - {:#admin-challenge} Actions taken by administrators are not final and are open to be challenged, at this point administrators will make a group decision regarding the action taken.
 
