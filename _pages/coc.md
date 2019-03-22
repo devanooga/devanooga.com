@@ -34,6 +34,7 @@ devanooga is organized by Chattanooga-area members. We want to foster a communit
 ## Administrators
 Currently, our Slack Team is administered by the following people:
 - Bobby Burden, @bobby_brb3 on Slack
+- Kate Izell, @kate on Slack
 - William Roush, @strangewill on Slack
 
 ## Changes to the Code of Conduct
