@@ -63,4 +63,4 @@ We ask that users keep these additional rules in mind when using the devanooga S
   - {:#privacy-chat-logs-politics} `#politics` - 7 days
   - {:#privacy-chat-logs-sandbox} `#sandbox` - 1 day 
 - {:#privacy-admin-email} All administrators have access to the <admin@devanooga.com> e-mail address.
-- {:#privacy-donations} All donations are publicly tracked on our meta repo in our financial reports, this includes who donated and how much.
+- {:#privacy-donations} All donations over $50 for a one-time donation, $600 for the year or at the request of the donor are publicly tracked on our meta repo in our financial reports, this includes who donated and how much.
