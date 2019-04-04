@@ -1,0 +1,16 @@
+---
+layout: page
+layout_modifier: wrapper--members_page wide
+title: Outreach
+permalink: /outreach/
+menu_group: 1
+menu_sort: 1
+---
+<p class="sidebar-blurb">The following members are open providing discounted or free services for Not-For-Profit organizations and charities. Feel free to contact them using the method that they have provided.</p>
+
+<ul class="members">
+  {% assign outreach_members = (site.outreach_members | sort: 'name') %}
+  {% for outreach_member in outreach_members %}
+    {% include outreach_member.html %}
+  {% endfor %}
+</ul>
