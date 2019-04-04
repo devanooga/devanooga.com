@@ -6,14 +6,14 @@
       <span aria-label="Real name">{{ outreach_member.name }}</span>
     </h3>
     <ul class="outreach-member-info">
-      {% if outreach_member.email %}
-        <li>Contact: <a href="mailto:{{outreach_member.email}}">Email {{outreach_member.name.first}}</a></li>
+      {% if outreach_member.outreach.email %}
+        <li>Contact: <a href="mailto:{{outreach_member.outreach.email}}">Email {{outreach_member.name.first}}</a></li>
       {% endif %}
-      {% if outreach_member.services %}
-        <li>Services: {{outreach_member.services}}</li>
+      {% if outreach_member.outreach.services %}
+        <li>Services: {{outreach_member.outreach.services}}</li>
       {% endif %}
-      {% if outreach_member.stack %}
-        <li>Stack: {{outreach_member.stack}}</li>
+      {% if outreach_member.outreach.stack %}
+        <li>Stack: {{outreach_member.outreach.stack}}</li>
       {% endif %}
     </ul>
   </div>

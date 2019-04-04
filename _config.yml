@@ -25,9 +25,6 @@ collections:
   members:
     output: false
     relative_directory: ./_collections/members
-  outreach_members:
-    output: false
-    relative_directory: ./_collections/outreach_members
 
 twitter:
   username: devanooga
