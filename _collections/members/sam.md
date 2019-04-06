@@ -8,4 +8,8 @@ profiles:
   twitter: samlachance
   keybase: samlachance
   linkedin: samlachance
+outreach:
+  email: sam@samlachance.com
+  services: Development, Consulting
+  stack: Ruby on Rails 
 ---
