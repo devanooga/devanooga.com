@@ -78,6 +78,3 @@ DEPENDENCIES
   jekyll-sitemap
   rake
   test-unit
-
-BUNDLED WITH
-   2.0.2
