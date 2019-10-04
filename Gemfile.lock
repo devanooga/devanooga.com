@@ -8,8 +8,8 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    eventmachine (1.2.7-x64-mingw32)
-    ffi (1.11.1-x64-mingw32)
+    eventmachine (1.2.7)
+    ffi (1.11.1)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
     i18n (1.6.0)
@@ -59,7 +59,7 @@ GEM
       ffi (~> 1.0)
     rouge (3.11.1)
     safe_yaml (1.0.5)
-    sassc (2.2.1-x64-mingw32)
+    sassc (2.2.1)
       ffi (~> 1.9)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
@@ -68,7 +68,7 @@ GEM
     unicode-display_width (1.6.0)
 
 PLATFORMS
-  x64-mingw32
+  ruby
 
 DEPENDENCIES
   jekyll (~> 4.0.0)
