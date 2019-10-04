@@ -38,5 +38,5 @@ social:
 
 sass:
   style: compressed
-gems:
+plugins:
   - jekyll-feed
