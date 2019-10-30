@@ -33,13 +33,13 @@ devanooga is organized by Chattanooga-area members. We want to foster a communit
 
 ## Administrators
 Currently, our Slack Team is administered by the following people:
-- Bobby Burden, @bobby_brb3 on Slack
+- Bobby Burden, @brb3 on Slack
 - Mario Ezra, @ME. on Slack
 - William Roush, @strangewill on Slack
 
 ## Changes to the Code of Conduct
 This is a living document. If you would like to openly discuss changes to this CoC, we welcome you to do any of the following:
-- {:#changes-general} Start a dialogue with administrators and the community in the `#devenooga` Slack channel.
+- {:#changes-general} Start a dialogue with administrators and the community in the `#devanooga` Slack channel.
 - {:#changes-contact} Use [our contact form](/contact) to send a message directly to administrators.
 - {:#changes-email} Send administrators an email at <admin@devanooga.com>.
 - {:#changes-github} Start an issue on [this website’s Github repository](https://github.com/devanooga/devanooga.github.io).
