@@ -11,7 +11,7 @@ devanooga has established a local amateur radio club for its members called
 "Radio Freqs". The club is _brand new_, and is actively working on building
 funds for a UHF repeater for the Chattanooga, NW Georgia area.
 
-Our club call sign is __KN4KHV__
+Our club call sign is __W3DEV__
 
 ## Members
 - [bobby_brb3](/members/#bobby_brb3): W1BRB
@@ -19,7 +19,8 @@ Our club call sign is __KN4KHV__
 - [mubiles](/members/#mubiles): KM4UBP
 - [sam](/members/#sam): N3SAM
 - [lordtaco](/members/#lordtaco): KK4TUJ
-- [seabre](/members/#seabre): SCRUB
 
 ## Repeaters
-__TBD__
+We currently have an echolink node active at `W3DEV-L`. For more information,
+refer to the Echolink section of our
+[#ham](https://www.devanooga.com/channels/ham/#echolink) page.
