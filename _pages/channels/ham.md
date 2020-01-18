@@ -71,7 +71,7 @@ here to validate: http://echolink.org/validation/
 
 [md380-tools](https://github.com/travisgoodspeed/md380tools) - Travis Goodspeed's hacked MD-380 firmware
 
-[You and your MD-380](https://learn.adafruit.com/tytera-md-380-dmr?view=all) - Adafruit's guide to 
+[You and your MD-380](https://learn.adafruit.com/tytera-md-380-dmr?view=all) - Adafruit's guide to
 hacking the md380
 
 [Jailbreaking a Digital Two Way Radio](https://www.youtube.com/watch?v=QSq_bVX2to8) - Travis Goodspeed's Shmoocon talk about how he hacked the MD-380

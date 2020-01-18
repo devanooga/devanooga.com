@@ -19,6 +19,7 @@ All devanooga members are expected to follow these guidelines in our community:
 - {:#conduct-attack-defame-harass} While it is ok to express contrary ideas, it is **NOT** ok to attack, defame, or otherwise harass another person. It **IS** ok (and encouraged) to criticize ideas that you disagree with.
 - {:#conduct-positive} Bring a positive attitude to all interactions.
 - {:#conduct-good-faith} Assume that everyone else is being light-hearted and acting in good faith unless demonstrated otherwise.
+- {:#conduct-advertising} Do not use our community as an advertisement platform. We are a community of developers and friends not an audience for your new idea.
 
 ## Conflict Resolution
 If a Devanooga member treats you or any other person in a way that violates this CoC, please contact an administrator immediately. You can contact us via slack, the [contact form](/contact/) on this site, or by [email](mailto:admin@devanooga.com).
@@ -63,6 +64,6 @@ We ask that users keep these additional rules in mind when using the devanooga S
 - {:#privacy-chat-logs} Administrators do not have access to private chat logs unless shared by a member of the private chat. We keep almost all chat logs indefinitely excluding the following channels:
   - {:#privacy-chat-logs-politics} `#politics` - 7 days
   - {:#privacy-chat-logs-feels} `#feels` - 7 days
-  - {:#privacy-chat-logs-sandbox} `#sandbox` - 1 day 
+  - {:#privacy-chat-logs-sandbox} `#sandbox` - 1 day
 - {:#privacy-admin-email} All administrators have access to the <admin@devanooga.com> e-mail address.
 - {:#privacy-donations} All donations over $50 for a one-time donation, $600 for the year or at the request of the donor are publicly tracked on our meta repo in our financial reports, this includes who donated and how much.
