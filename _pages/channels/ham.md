@@ -20,7 +20,7 @@ Discussions about Amateur Radio in the Chattanooga area.
 
 [CARC](http://w4am.net) - Chattanooga Amateur Radio Club
 
-[P5 Preparedness](http://www.p5preparedness.com/index.php/56-p5-amateur-radio-club) - A new club focused on new hams and emergency preparedness.
+devanooga - Official devanooga radio club, `W3DEV`
 
 ### APRS
 
@@ -33,6 +33,25 @@ Discussions about Amateur Radio in the Chattanooga area.
 [Mobilinkd](https://store.mobilinkd.com) - Bluetooth TNC for connecting your phone to your radio. Great for APRS and other digital modes.
 
 ### Digital Radio
+
+#### Echolink
+
+The devanooga radio club (`W3DEV`) has an official Echolink node, thanks to
+hardware donations from
+[@strangewill](http://localhost:4000/members/#strangewill)!
+
+devanooga echolink node: W3DEV-L
+
+Echolink clients:
+- Windows: [Echolink official client](http://echolink.org/download.htm)
+- Linux: [Qtel](https://www.svxlink.org/) - (for Arch, install qtel-git from AUR)
+- macOS: [EchoHam](http://echomac.sourceforge.net/) - (old, but it works)
+- Android: [Echolink for Android](https://play.google.com/store/apps/details?id=org.echolink.android)
+- iOS: [Echolink for iOS](https://apps.apple.com/app/id350688562)
+
+If it's your fist time using echolink, you have to install the client for your
+preferred platform, sign in with your callsign and make up a password, then go
+here to validate: http://echolink.org/validation/
 
 #### DMR
 
@@ -52,7 +71,7 @@ Discussions about Amateur Radio in the Chattanooga area.
 
 [md380-tools](https://github.com/travisgoodspeed/md380tools) - Travis Goodspeed's hacked MD-380 firmware
 
-[You and your MD-380](https://learn.adafruit.com/tytera-md-380-dmr?view=all) - Adafruit's guide to 
+[You and your MD-380](https://learn.adafruit.com/tytera-md-380-dmr?view=all) - Adafruit's guide to
 hacking the md380
 
 [Jailbreaking a Digital Two Way Radio](https://www.youtube.com/watch?v=QSq_bVX2to8) - Travis Goodspeed's Shmoocon talk about how he hacked the MD-380

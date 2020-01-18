@@ -1,7 +1,7 @@
 # Site settings
 title: devanooga
-tagline: "A community of tinkerers in and around Chattanooga, TN"
-description: "A community of tinkerers in and around Chattanooga, TN"
+tagline: "An online community of tech enthusiasts in and around Chattanooga,&nbsp;Tennessee."
+description: "An online community of tech enthusiasts in and around Chattanooga,&nbsp;Tennessee."
 url: "https://devanooga.com"
 github_username:  devanooga
 logo: /images/devanooga_logo_red.png
@@ -38,5 +38,5 @@ social:
 
 sass:
   style: compressed
-gems:
+plugins:
   - jekyll-feed

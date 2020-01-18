@@ -5,7 +5,6 @@ members-quilt: true
 website: https://wa9ace.net/
 profiles:
   github: WA9ACE
-  bitbucket: WA9ACE
   gitlab: WA9ACE
   keybase: WA9ACE
   twitter: WA9ACE
