@@ -18,6 +18,7 @@ All devanooga members are expected to follow these guidelines in our community:
 - While it is ok to express contrary ideas, it is **NOT** ok to attack, defame, or otherwise harass another member. It **IS** ok (and encouraged) to criticize ideas that you disagree with.
 - Bring a positive attitude to all interactions.
 - Assume that everyone else is being light-hearted and acting in good faith unless demonstrated otherwise.
+- Do not use our community as an advertisement platform. We are a community of developers and friends not an audience for your new idea.
 
 ## Conflict Resolution
 If you or any other member is being treated in a way that violates this CoC, please contact an administrator immediately. You can contact us via slack, the [contact form](/contact/) on this site, or by [email](mailto:admin@devanooga.com).
