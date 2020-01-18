@@ -2,7 +2,7 @@
 layout: json
 permalink: /members/quilt/
 ---
-{% assign members = (site.members | where:"members-quilt","true") %}
+{% assign members = site.members | where:"members-quilt","true" %}
 [
 {% for member in members %}
   {

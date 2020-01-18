@@ -6,10 +6,10 @@ permalink: /members/
 menu_group: 1
 menu_sort: 1
 ---
-<p class="member_intro"><strong>We welcome tinkerers of every stripe and background!</strong> You don’t have to be a developer to join our community. Just bring your curiosity and enthusiasm for technology. To be featured on this page, <a href="https://github.com/devanooga/devanooga.github.io#submitting-your-member-profile">follow the instructions</a> on this website’s readme.</p>
+<p class="sidebar-blurb"><strong>We welcome tinkerers of every stripe and background!</strong> You don’t have to be a developer to join our community. Just bring your curiosity and enthusiasm for technology. To be featured on this page, <a href="https://github.com/devanooga/devanooga.github.io#submitting-your-member-profile">follow the instructions</a> on this website’s readme.</p>
 
 <ul class="members">
-{% assign members = (site.members | sort: 'name') %}
+{% assign members = site.members | sort: 'name' %}
 {% for member in members %}
 {% if member.organizer != true %}
   {% include member.html %}
@@ -25,7 +25,7 @@ menu_sort: 1
   </li>
 </ul>
 <hr>
-<p class="member_intro">This community really is all about its people (that’s you!), but it’s organized by these fine folks:</p>
+<p class="sidebar-blurb">This community really is all about its people (that’s you!), but it’s organized by these fine folks:</p>
 <ul class="members">
   {% for member in members %}
   {% if member.organizer == true %}
