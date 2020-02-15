@@ -1,0 +1,15 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+menu_group: 2
+menu_sort: 2
+layout_modifier: wrapper--projects_page
+---
+
+<ul class="projects">
+{% assign projects = site.projects | sort: 'name' %}
+{% for project in projects %}
+    {% include project.html %}
+{% endfor %}
+</ul>

@@ -1,0 +1,15 @@
+<li id="{{project.slug}}" class="project">
+  <div class="project--wrapper">
+    {% if project.website %}
+    <a href="{{project.website}}" title="{{project.name}}’s website" class="project--website">
+    {% endif %}
+      <img src="{{ project.image }}" alt="{{ project.name }}" />
+      <h3 class="project--name">
+        <span aria-label="Real name">{{ project.name }}</span>
+      </h3>
+    {% if project.website %}
+    </a>
+    {% endif %}
+    <span>Made by: <a href="/members/#{{ project.member }}">{{ project.member }}</a></span>
+  </div>
+</li>
