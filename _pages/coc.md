@@ -2,8 +2,6 @@
 layout: page
 title: Code of Conduct
 permalink: /code-of-conduct/
-menu_group: 2
-menu_sort: 2
 layout_modifier: code-of-conduct
 ---
 
