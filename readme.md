@@ -39,6 +39,7 @@ Project data is located under `_collections/projects`. To get started, just copy
 
 - **`name`** (required) The name of your project.
 - **`website`** (required) The website where your project is hosted. Either a deployed project or a git repository.
+- **`source`** (optional) URL to the source code.
 - **`member`** (required) Your member name. This is used to assign attribution and link to your profile on our member page.
 - **`description`** (optional) A brief description of your project.
 - **`image`** (required) A link to an image that represents your project.

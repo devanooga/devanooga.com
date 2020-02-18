@@ -1,6 +1,7 @@
 <li id="{{project.slug}}" class="project">
   <div class="project--wrapper">
     <a href="{{project.website}}" title="{{project.name}}’s website" class="project--website">
+
       <div class="img--wrapper">
         <img src="{{ project.image }}" alt="{{ project.name }}" />
       </div>
@@ -8,6 +9,11 @@
         <span aria-label="Real name">{{ project.name }}</span>
       </h3>
     </a>
+    <ul class="project--links" aria-label="Project Links">
+      {% if project.source %}
+      <li><a href="{{ project.source }}" class="source" title="{{ project.name }} source">source</a></li>
+      {% endif %}
+    </ul>
     <span>Made by: <a href="/members/#{{ project.member }}">{{ project.member }}</a></span>
   </div>
 </li>
