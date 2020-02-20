@@ -33,6 +33,17 @@ Member data is located under `_collections/members`. Copy an existing profile, n
 
 If you have recommendations for new fields, please submit an issue or a pull request!
 
+# Submitting your project
+
+Project data is located under `_collections/projects`. To get started, just copy an existing project markdown file, rename it match your project name, then fill out these properties:
+
+- **`name`** (required) The name of your project.
+- **`website`** (required) The website where your project is hosted. Either a deployed project or a git repository.
+- **`source`** (optional) URL to the source code.
+- **`member`** (required) Your member name. This is used to assign attribution and link to your profile on our member page.
+- **`description`** (optional) A brief description of your project.
+- **`image`** (required) A link to an image that represents your project.
+
 # Running tests
 
 Before a PR will be merged, it must be passing tests. We have the best tests, don't we folks?

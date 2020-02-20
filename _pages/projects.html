@@ -1,0 +1,19 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+menu_group: 2
+menu_sort: 2
+layout_modifier: wrapper--projects_page wide
+---
+
+<p class="sidebar-blurb">
+    We are proud of our members and their accomplishments. Shown here is a list of projects that they have created, and are kind enough to share with us. If you'd like to have your project listed here, just <a href="https://github.com/devanooga/devanooga.com#submitting-your-project">follow these instructions</a>.
+</p>
+
+<ul class="projects">
+{% assign projects = site.projects | sort: 'name' %}
+{% for project in projects %}
+    {% include project.html %}
+{% endfor %}
+</ul>
