@@ -4,6 +4,15 @@
   border-radius: 4px;
   color: darken($blue-color, 35%);
 
+  &.urgent {
+    background-color: lighten($brand-color, 30%);
+    color: darken($brand-color, 35%);
+
+    .button {
+      background-color: darken($brand-color, 35%);
+    }
+  }
+
   a:not(.button) {
     color: inherit;
   }
