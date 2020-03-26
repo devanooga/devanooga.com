@@ -9,10 +9,10 @@
     color: darken($brand-color, 35%);
 
     .button {
-      background-color: darken($brand-color, 35%);
+      background-color: $brand-color;
 
       &:hover {
-        background-color: $brand-color;
+        background-color: darken($brand-color, 35%);
       }
     }
   }
