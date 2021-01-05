@@ -25,3 +25,5 @@ This channel is *usually* for less language-specific questions (eg: learning abo
 [Flight rules for Git](https://github.com/k88hudson/git-flight-rules/) - Flight Rules: A guide for astronauts (now, programmers using Git) about what to do when things go wrong
 
 [Do What You Love](https://github.com/dwyl/start-here/) - A Quick-start Guide for people that want to Do What You Love
+
+[Succinctly Series](https://www.syncfusion.com/ebooks/) - Free ebooks for .NET & JavaScript Developers
