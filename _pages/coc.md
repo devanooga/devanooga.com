@@ -38,7 +38,7 @@ Currently, our Slack Team is administered by the following people:
 
 ## Changes to the Code of Conduct
 This is a living document. If you would like to openly discuss changes to this CoC, we welcome you to do any of the following:
-- {:#changes-general} Start a dialogue with administrators and the community in the `#devanooga` Slack channel.
+- {:#changes-general} Start a dialogue with administrators and the community in the `#devanooga-meta` Slack channel.
 - {:#changes-contact} Use [our contact form](/contact) to send a message directly to administrators.
 - {:#changes-email} Send administrators an email at <admin@devanooga.com>.
 - {:#changes-github} Start an issue on [this website’s Github repository](https://github.com/devanooga/devanooga.github.io).
@@ -52,7 +52,7 @@ We ask that users keep these additional rules in mind when using the devanooga S
 - {:#slack-one-account} Users are allowed only one account.
 - {:#slack-impersonation} Users may not impersonate other users, celebrities, etc.
 - {:#slack-on-topic} Try to find a relevant channel for a topic of discussion. For example, don't talk about your latest trip to the gun range in `#ruby`.
-- {:#slack-politics-religion} Political, religious, and otherwise sensitive or controversial discussions are welcome, but we ask that users keep such topics out of the `#devanooga` and `#random` channels.
+- {:#slack-politics-religion} Political, religious, and otherwise sensitive or controversial discussions are welcome, but we ask that users keep such topics out of the `#general` and `#random` channels.
 - {:#slack-new-channels} Users are welcome to create new channels for any topic. Administrators _may_ remove a channel if it is determined that it violates our CoC or if the channel is unused and cluttering up our channel list.
 - {:#slack-bots} Bots that provide information relevant to a channel, or provide some utility to a channel or the organization are encouraged. Bots that exist only as a joke or to provide content that could reasonably be considered spam are actively discouraged, and may be deleted.
 
@@ -60,8 +60,9 @@ We ask that users keep these additional rules in mind when using the devanooga S
 
 - {:#privacy-contact-form} All administrators have access to the contact form submitted on the website.
 - {:#privacy-chat-logs} Administrators do not have access to private chat logs unless shared by a member of the private chat. We keep almost all chat logs indefinitely excluding the following channels:
-  - {:#privacy-chat-logs-politics} `#politics` - 7 days
   - {:#privacy-chat-logs-feels} `#feels` - 7 days
+  - {:#privacy-chat-logs-politics} `#politics` - 7 days
+  - {:#privacy-chat-logs-rants} `#rants` - 7 days
   - {:#privacy-chat-logs-sandbox} `#sandbox` - 1 day
 - {:#privacy-admin-email} All administrators have access to the <admin@devanooga.com> e-mail address.
 - {:#privacy-donations} All donations over $50 for a one-time donation, $600 for the year or at the request of the donor are publicly tracked on our meta repo in our financial reports, this includes who donated and how much.
