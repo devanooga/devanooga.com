@@ -1,0 +1,10 @@
+require:
+  - rubocop-performance
+  - rubocop-rake
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'bin/**/*'
+    - '_site/**/*'
+    - 'vendor/**/*'

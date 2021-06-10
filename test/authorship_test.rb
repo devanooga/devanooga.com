@@ -1,29 +1,25 @@
+# frozen_string_literal: true
+
 require 'test/unit'
 require 'jekyll'
 
 class TestBlogPosts < Test::Unit::TestCase
-
   def test_authorship
     # Load all of the blog post md files, and fill the list of post authors
     post_authors = []
     Dir.foreach('_posts/') do |f|
-      if f.chars[0] == '.'
-        next
-      end
+      next if f[0].chars == '.'
 
       yaml = get_front_matter("_posts/#{f}")
       assert_not_nil(yaml, "#{f} does not contain YAML front matter")
       assert_not_nil(yaml['author'], "#{f} does not contain an author")
       post_authors << yaml['author']
-
     end
 
     # Load all of the member profiles
     members = {}
     Dir.foreach('_collections/members/') do |f|
-      if f.chars[0] == '.' or f.chars[0] == '_'
-        next
-      end
+      next if (f[0].chars == '.') || (f[0].chars == '_')
 
       yaml = get_front_matter("_collections/members/#{f}")
       assert_not_nil(yaml, "#{f} does not contain YAML front matter")
@@ -34,7 +30,8 @@ class TestBlogPosts < Test::Unit::TestCase
 
     # Make sure that the authors each have a member page.
     post_authors.each do |author|
-      assert(members.key?(author) || !members.has_value?(author), "#{author} already has a member profile. Please use the username associated with this member.")
+      assert(members.key?(author) || !members.value?(author),
+             "#{author} already has a member profile. Please use the username associated with this member.")
     end
   end
 
@@ -45,7 +42,6 @@ class TestBlogPosts < Test::Unit::TestCase
       return data
     end
 
-    return nil
+    nil
   end
-
 end
