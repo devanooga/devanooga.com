@@ -5,6 +5,9 @@
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "variables",
+        "base",
+        "typography",
+        "layout",
         "syntax-highlighting",
         "form",
         "header",
@@ -15,6 +18,8 @@
         "donorbox",
         "post",
         "archive",
+        "hidden-yet-focusable",
+        "quilt",
         "announcement",
         "button",
         "code-of-conduct"
