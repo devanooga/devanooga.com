@@ -12,6 +12,7 @@ group :jekyll_plugins do
 end
 
 group :development, :test do
+  gem 'irb'
   gem 'rake'
   gem 'rubocop'
   gem 'rubocop-performance'

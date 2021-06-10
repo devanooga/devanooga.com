@@ -8,7 +8,7 @@ class TestBlogPosts < Test::Unit::TestCase
     # Load all of the blog post md files, and fill the list of post authors
     post_authors = []
     Dir.foreach('_posts/') do |f|
-      next if f[0].chars == '.'
+      next if f.start_with?('.')
 
       yaml = get_front_matter("_posts/#{f}")
       assert_not_nil(yaml, "#{f} does not contain YAML front matter")
@@ -19,7 +19,7 @@ class TestBlogPosts < Test::Unit::TestCase
     # Load all of the member profiles
     members = {}
     Dir.foreach('_collections/members/') do |f|
-      next if (f[0].chars == '.') || (f[0].chars == '_')
+      next if f.start_with?('.') || f.start_with?('_')
 
       yaml = get_front_matter("_collections/members/#{f}")
       assert_not_nil(yaml, "#{f} does not contain YAML front matter")
