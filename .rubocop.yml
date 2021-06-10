@@ -1,0 +1,20 @@
+require:
+  - rubocop-performance
+  - rubocop-rake
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'bin/**/*'
+    - '_site/**/*'
+    - 'vendor/**/*'
+
+Lint/MissingSuper:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Metrics:
+  Exclude:
+    - 'test/**/*'

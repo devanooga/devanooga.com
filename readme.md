@@ -48,6 +48,6 @@ Project data is located under `_collections/projects`. To get started, just copy
 
 Before a PR will be merged, it must be passing tests. We have the best tests, don't we folks?
 
-To run tests in your dev environment, execute `bundle exec rake tests`.
+To run tests in your dev environment, execute `bundle exec rake test`.
 
 You can create new tests in the `test` directory.

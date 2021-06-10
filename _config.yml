@@ -16,7 +16,14 @@ tag_title_suffix: "&rdquo;"
 # Build settings
 markdown: kramdown
 include: ['_pages','_posts']
-exclude: ['design_files','vendor']
+
+exclude:
+- bin
+- design_files
+- test
+- Rakefile
+- readme.md
+- vendor
 
 # Default permalink for _posts
 permalink: /blog/:year/:month/:day/:title
@@ -41,5 +48,3 @@ social:
 
 sass:
   style: compressed
-plugins:
-  - jekyll-feed

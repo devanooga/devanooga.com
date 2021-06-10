@@ -1,9 +1,0 @@
-language: ruby
-rvm:
-  - 2.6
-
-sudo: false
-
-script:
-  - bundle exec jekyll build
-  - bundle exec rake test
