@@ -8,3 +8,13 @@ AllCops:
     - 'bin/**/*'
     - '_site/**/*'
     - 'vendor/**/*'
+
+Lint/MissingSuper:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Metrics:
+  Exclude:
+    - 'test/**/*'

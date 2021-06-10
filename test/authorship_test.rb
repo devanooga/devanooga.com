@@ -19,7 +19,7 @@ class TestBlogPosts < Test::Unit::TestCase
     # Load all of the member profiles
     members = {}
     Dir.foreach('_collections/members/') do |f|
-      next if f.start_with?('.') || f.start_with?('_')
+      next if f.start_with?('.', '_')
 
       yaml = get_front_matter("_collections/members/#{f}")
       assert_not_nil(yaml, "#{f} does not contain YAML front matter")

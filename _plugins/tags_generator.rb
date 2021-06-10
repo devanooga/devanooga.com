@@ -17,13 +17,12 @@ module Jekyll
   end
 
   class TagGenerator < Generator
-    safe true
     def generate(site)
-      if site.layouts.key? 'tag'
-        dir = site.config['tags_dir'] || 'tag'
-        site.tags.each_key do |tag|
-          write_tag_index(site, File.join(dir, tag), tag)
-        end
+      return unless site.layouts.key? 'tag'
+
+      dir = site.config['tags_dir'] || 'tag'
+      site.tags.each_key do |tag|
+        write_tag_index(site, File.join(dir, tag), tag)
       end
     end
 
