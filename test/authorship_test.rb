@@ -30,8 +30,10 @@ class TestBlogPosts < Test::Unit::TestCase
 
     # Make sure that the authors each have a member page.
     post_authors.each do |author|
-      assert(members.key?(author) || !members.value?(author),
-             "#{author} already has a member profile. Please use the username associated with this member.")
+      assert(
+        members.key?(author) || !members.value?(author),
+        "#{author} already has a member profile. Please use the username associated with this member."
+      )
     end
   end
 
