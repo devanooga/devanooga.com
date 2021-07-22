@@ -6,9 +6,11 @@ layout_modifier: code-of-conduct
 ---
 
 ## tl;dr
+
 Follow the golden rule: treat others in the way that you would want to be treated. If you have a conflict with another member, or in any way feel harassed, please contact an admin to discuss the situation.
 
 ## General Conduct
+
 All devanooga members are expected to follow these guidelines in our community:
 
 - {:#conduct-offensive-language} Avoid language that is unnecessarily offensive to other people
@@ -20,24 +22,30 @@ All devanooga members are expected to follow these guidelines in our community:
 - {:#conduct-advertising} Do not use our community as an advertisement platform. We are a community of developers and friends not an audience for your new idea.
 
 ## Conflict Resolution
+
 If a Devanooga member treats you or any other person in a way that violates this CoC, please contact an administrator immediately. You can contact us via slack, the [contact form](/contact/) on this site, or by [email](mailto:admin@devanooga.com).
 Administrators will attempt to resolve the conflict in a manner that is accessible to the rest of the devanooga community, such as in a public channel. If open dialogue puts the privacy of one or more of the parties at risk, parts or all of the conflict resolution may be carried out in private.
 
 ## Conduct of Administrators
+
 devanooga is organized by Chattanooga-area members. We want to foster a community that is driven and shaped by the members. With that in mind:
 
-- {:#admin-transparency} Administrators will do everything within reason to act transparently. In some cases, it may be necessary (for the privacy of people involved) to do things "behind closed doors". We will avoid this whenever possible, and will inform the rest of the community when such private deliberation has taken place.
+- {:#admin-transparency} Administrators will do everything within reason to act transparently. In some cases, it may be necessary (for the privacy of people involved) to do things "behind closed doors". We will avoid this whenever possible, and will inform the rest of the community when such private deliberation has taken place. See more on our [transparency](/about/transparency) page.
 - {:#admin-removal} Administrators can be removed from power. If they violate the CoC, or otherwise intentionally prevent the growth of the community, they can be removed by a majority vote of the other administrators.
 - {:#admin-challenge} Actions taken by administrators are not final and are open to be challenged, at this point administrators will make a group decision regarding the action taken.
 
 ## Administrators
+
 Currently, our Slack Team is administered by the following people:
+
 - Bobby Burden, @brb3 on Slack
 - Mario Ezra, @ME. on Slack
 - William Roush, @strangewill on Slack
 
 ## Changes to the Code of Conduct
+
 This is a living document. If you would like to openly discuss changes to this CoC, we welcome you to do any of the following:
+
 - {:#changes-general} Start a dialogue with administrators and the community in the `#devanooga-meta` Slack channel.
 - {:#changes-contact} Use [our contact form](/contact) to send a message directly to administrators.
 - {:#changes-email} Send administrators an email at <admin@devanooga.com>.
@@ -45,6 +53,7 @@ This is a living document. If you would like to openly discuss changes to this C
 - {:#changes-fork} Fork this website’s Github repository, commit your changes, and issue a Pull Request.
 
 ## Use of the Slack Organization
+
 The use of the devanooga Slack Organization is a privilege we provide and maintain for users that are in good standing with the community. At any time, the admins may choose to revoke the privileges of a user to access the Slack Organization.
 
 We ask that users keep these additional rules in mind when using the devanooga Slack Organization.
