@@ -66,3 +66,15 @@ We ask that users keep these additional rules in mind when using the devanooga S
   - {:#privacy-chat-logs-sandbox} `#sandbox` - 1 day
 - {:#privacy-admin-email} All administrators have access to the <admin@devanooga.com> e-mail address.
 - {:#privacy-donations} All donations over $50 for a one-time donation, $600 for the year or at the request of the donor are publicly tracked on our meta repo in our financial reports, this includes who donated and how much.
+
+## Electronic Frontier Foundation
+
+As a member organization of the [Electronic Frontier Alliance](https://www.eff.org/EFA-FAQ), and as an implicit extension of our initial code of conduct above, we endorse and exhibit the following principles: 
+
+1. Free Expression: People should be able to speak their minds to whoever will listen. 
+2. Security: Technology should be trustworthy and answer to its users. 
+3. Privacy: Technology should allow private and anonymous speech, and allow users to set their own parameters about what to share with whom. 
+4. Creativity; Technology should promote progress by allowing people to build on the ideas, creations, and inventions of others. 
+5. Access to Knowledge: Curiosity hould be rewarded, not stifled. 
+
+We uphold these principles by fighting for transparency and freedom in culture, code, and law. 
