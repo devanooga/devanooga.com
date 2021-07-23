@@ -25,6 +25,6 @@ Our club call sign is **W3DEV**
 
 ## Repeaters
 
-We currently have an echolink node active at `W3DEV-L`. For more information,
+We currently have an echolink node active at `W3DEV-L` (395443). For more information,
 refer to the Echolink section of our
 [#ham](https://www.devanooga.com/channels/ham/#echolink) page.

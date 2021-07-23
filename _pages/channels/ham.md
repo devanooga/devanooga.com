@@ -40,7 +40,7 @@ The devanooga radio club (`W3DEV`) has an official Echolink node, thanks to
 hardware donations from
 [@strangewill](http://localhost:4000/members/#strangewill)!
 
-devanooga echolink node: W3DEV-L
+devanooga echolink node: W3DEV-L (395443)
 
 Echolink clients:
 - Windows: [Echolink official client](http://echolink.org/download.htm)
