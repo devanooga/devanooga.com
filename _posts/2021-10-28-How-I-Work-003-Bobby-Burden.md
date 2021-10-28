@@ -15,7 +15,7 @@ _In an effort to explore the talent in our community, Devanooga is doing a "How 
 Bobby Burden
 
 #### Devanooga username
-[brb3](https://www.devanooga.com/members/#brb3)
+[brb3](https://www.devanooga.com/members/#bobby_brb3)
 
 #### Occupation
 Senior Software Engineer
@@ -33,19 +33,19 @@ Pixel 3a
 Suddenly
 
 #### What apps, software, and/or tools can't you live without? 
-Visual Studio Code
-Emacs with org-mode
-A good terminal emulator and bash/zsh
-git
+- Visual Studio Code
+- Emacs with org-mode
+- A good terminal emulator and bash/zsh
+- git
 
 #### What is your best time-saving shortcut?
 Be in the mindset to work. If you aren't in the right mindset, don't work. Playing the right music helps me get in the right mindset, but everyone is different. If you can't focus on a problem, change something and try again.
 
 #### What is your workspace setup like?
-A good keyboard (I rotate between different keyboards for fun)
-Two monitors
-A notebook and pen for thinking through problems
-A messy desk
+- A good keyboard (I rotate between different keyboards for fun)
+- Two monitors
+- A notebook and pen for thinking through problems
+- A messy desk
 
 #### Favorite or must-have gear in your workspace
 I like listening to music while I work, so I have some specific gear for that purpose:
