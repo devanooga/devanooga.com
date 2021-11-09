@@ -1,0 +1,15 @@
+name: Netlify Nightly Deploy
+
+on:
+  schedule:
+    - cron: "0 7 * * *"
+
+jobs:
+  build:
+    name: Call Netlify build hook
+    runs-on: ubuntu-latest
+    with:
+      netlify_build_hook: ${{ secrets.NETLIFY_BUILD_HOOK }}
+    steps:
+      - name: Curl request
+        run: curl -X POST -d '{}' "https://api.netlify.com/$NETLIFY_BUILD_HOOK"
