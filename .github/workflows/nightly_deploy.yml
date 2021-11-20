@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Curl request
+        uses: wei/curl@master
         with:
-          netlify_build_hook: ${{ secrets.NETLIFY_BUILD_HOOK }}
-        run: curl -X POST -d '{}' "https://api.netlify.com/$NETLIFY_BUILD_HOOK"
+          args: -X POST -d '{}' "https://api.netlify.com/${{ secrets.NETLIFY_BUILD_HOOK }}"
