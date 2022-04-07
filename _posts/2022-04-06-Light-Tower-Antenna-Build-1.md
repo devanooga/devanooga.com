@@ -16,7 +16,7 @@ The beginning of the journey to convert an old light tower used for construction
 
 ## It started with a need...
 
-So for those of you that are unfamiliar with [Ham Radio](https://en.wikipedia.org/wiki/Amateur_radio) is basically a hobby where a lot of us nerd out a bit _too_ much about radio technologies. We're allowed a wide range of non-commercial uses on a lot of radio spectrum for all kinds of fun stuff; sending data, voice, images, video anywhere from feet to thousands of miles, limitations are mostly your creativity and well -- what the [FCC](https://www.fcc.gov/) allows us to do, pop into `#ham` if you're interested it!
+So for those of you that are unfamiliar with [Ham Radio](https://en.wikipedia.org/wiki/Amateur_radio), it is basically a hobby where a lot of us nerd out a bit _too_ much about radio technologies. We're allowed a wide range of non-commercial uses on a lot of radio spectrum for all kinds of fun stuff; sending data, voice, images, video anywhere from feet to thousands of miles, limitations are mostly your creativity and well -- what the [FCC](https://www.fcc.gov/) allows us to do, pop into `#ham` if you're interested it!
 
 Part of my experience with ham radio has brought me to the need to get my antennas higher off the ground (as `@sam` and `@mubiles` likes to remind us -- "HEIGHT IS MIGHT!"), I've been running mine indoors and on my lawn on top of tripods I used for VR, not exactly the best solutions or the height I need.
 
