@@ -9,7 +9,7 @@ layout_modifier: centered
 
 Please read our [code of conduct](/code-of-conduct) before joining.
 
-<iframe src="https://devanooga-slack.herokuapp.com/"
+<iframe src="https://bot.devanooga.com/"
     width="100%"
     height="600"
     frameBorder="0"></iframe>
