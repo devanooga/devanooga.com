@@ -51,7 +51,7 @@ One of them asks me what in the _world_ I'm doing with one of these. I tell him 
 
 They grab a front loader, drag it out, I pull the van around, hook it up, size up some annoyances, the chains are shot and are unusable, the trailer jack is shot and will not stand up high enough to get the van under it, I have to heave-ho it onto the trailer hitch, the tank is full of Diesel and water (I don't know this yet...), I'm strapping stuff down, one of the workers points out the diesel generator in it isn't actually bolted in. I tell them I'll just grab some of the extra straps I have nad strap it in tight.
 
-"Aren't you throwing this out?" -- Yeah I am, "well, we'll go grab the front loader again and chain it up and yank it out for you" -- SCORE! These guys are helping me dispose of something I honestly have no use for. The motor is toast, in pieces, maybe I cold salvage it but honestly it's a lot of work that I'm unfamiliar with, with a way overkill generator. One chain-and-yank later and I'm one motor lighter. Finish packing up, and on the road I go.
+"Aren't you throwing this out?" -- Yeah I am, "well, we'll go grab the front loader again and chain it up and yank it out for you" -- SCORE! These guys are helping me dispose of something I honestly have no use for. The motor is toast, in pieces, maybe I could salvage it but honestly it's a lot of work that I'm unfamiliar with, with a way overkill generator. One chain-and-yank later and I'm one motor lighter. Finish packing up, and on the road I go.
 
 ![Mostly packed](/images/blog/2023-08-12-light-tower-antenna-build-2/pick-up.jpg)
 You can see the generator in this shot, all the parts are in the back of the van.
