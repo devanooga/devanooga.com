@@ -71,11 +71,11 @@ You can see splotching on the windshield, that's diesel mixed with water.
 
 Things are going smoothly until a sudden violent vibration rocks the rear of the van, I pull over immediately. My driver-side tire has shredded on the freeway, wrapping around the fender. On top of that, the lack of a tower arm retainer means the tower has slowly been working its way extended, so my trailer is now an extra ~6ft longer.
 
+I limp across a bridge I was coming up on, get onto and off-amp and start considering what is going on.
+
 ![Tire loss](/images/blog/2023-08-12-light-tower-antenna-build-2/shreds.jpg)
 To shreds you say; a shredded tire, tower extended, diesel all over the front of the trailer, the fender is bent to all hell.
 {: style="color:gray; font-size: 80%; text-align: center;"}
-
-I limp across a bridge I was coming up on, get onto and off-amp and start considering what is going on.
 
 I drop the trailer, run down to the local tractor supply, buy a new RV tire, rush back, start the annoying process of replacing the tire on an onramp. It's dirty, the tire belt shreds can easily pierce my work gloves, getting it off of the fender it wrapped around is a pain, I'm stressing because I'm hundreds of miles away from home.
 
