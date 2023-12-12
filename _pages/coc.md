@@ -19,6 +19,7 @@ All devanooga members are expected to follow these guidelines in our community:
 - {:#conduct-attack-defame-harass} While it is ok to express contrary ideas, it is **NOT** ok to attack, defame, or otherwise harass another person. It **IS** ok (and encouraged) to criticize ideas that you disagree with.
 - {:#conduct-positive} Bring a positive attitude to all interactions.
 - {:#conduct-good-faith} Assume that everyone else is being light-hearted and acting in good faith unless demonstrated otherwise.
+- {:#conduct-fair-representation} Because members will assume good faith in communications, unfair representation of your opinion, premise, question, or idea in an untruthful or deceitful manner is not allowed. For example, lying about your understanding or premise to solicit people to interact with you is a waste of your time and theirs. devanooga hopes to foster a community of open sharing and continued learning, which cannot be accomplished through wasted effort of experts.
 - {:#conduct-advertising} Do not use our community as an advertisement platform. We are a community of developers and friends not an audience for your new idea.
 
 ## Conflict Resolution
