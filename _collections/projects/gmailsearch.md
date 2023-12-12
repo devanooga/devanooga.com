@@ -1,6 +1,6 @@
 ---
 name: Gmail Search Operators
-website: https://gmailsearchoperators.xyz/
+website: https://gmailsearchoperators.com/
 member: ryanmaynard
 description: Handy search operators to quickly navigate your Gmail inbox. 
 source: https://gitlab.com/ryanmaynard/gmail-search-operators
