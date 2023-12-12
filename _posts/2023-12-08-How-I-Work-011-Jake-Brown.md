@@ -51,7 +51,10 @@ Not talked about yet: AirPods or any noise cancelling headphones.
 [More](https://youtu.be/fLv1cfiSj-M?si=vwpNHJ6SgXRp6uJl)
 
 #### What everyday thing are you better at than everyone else? What's your secret? 
-Communicating technical topics to non-technical people. 1. Be patient, people can have a lot of emotions bound up in their lack of confidence with technology.2. Always assume positive intent. Ceaseless professionalism and deescalation are my priority. 3. Ask lots of questions. Try and develop an internal picture of their understanding before offering an extensive explanation. This will help you meet them where they are, and turn a lesson into a conversation.
+Communicating technical topics to non-technical people: 
+1. Be patient, people can have a lot of emotions bound up in their lack of confidence with technology.
+2. Always assume positive intent. Ceaseless professionalism and deescalation are my priority. 
+3. Ask lots of questions. Try and develop an internal picture of their understanding before offering an extensive explanation. This will help you meet them where they are, and turn a lesson into a conversation.
 
 #### What is the best advice you have ever received? 
 “Happiness equals reality minus shifting expectations.”
