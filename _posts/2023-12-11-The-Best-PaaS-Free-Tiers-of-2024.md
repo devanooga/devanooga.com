@@ -10,7 +10,7 @@ tags:
 
 # The Best PaaS Free Tiers of 2024
 
-Ten years ago, nearly every code bootcamp, incubator, and tutorial would reference Heroku's free tier at some point. In November 2022, Heroku removed their free tier. [They still have afforable plans](https://www.heroku.com/pricing), but this post isn't about that. Now that the free tier has been gone for a year, it is worth reviewing some of the other free tiers currently available. 
+Ten years ago, nearly every code bootcamp, incubator, and tutorial would reference Heroku's free tier at some point. In November 2022, Heroku removed their free tier. [They still have affordable plans](https://www.heroku.com/pricing), but this post isn't about that. Now that the free tier has been gone for a year, it is worth reviewing some of the other free tiers currently available. 
 
 ## [Fly.io](https://fly.io)
 
