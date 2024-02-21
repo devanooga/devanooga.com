@@ -1,7 +1,7 @@
 ---
 title: Light Tower to Ham Antenna Mast Part 2
 layout: post
-permalink: /blog/2023/08/12/light-tower-antenna-build-part-2
+permalink: /blog/2024/02/21/light-tower-antenna-build-part-2
 author: strangewill
 tags:
   - ham radio
@@ -21,17 +21,17 @@ So when we left off; I had a plan for a ham radio tower, it's 700 miles away, le
 
 I mean I've done a lot of road trips, how bad can it be?
 
-![Google Maps Route](/images/blog/2023-08-12-light-tower-antenna-build-2/map.png)
+![Google Maps Route](/images/blog/2024-02-24-light-tower-antenna-build-2/map.png)
 It's uh, this is going to take all weekend.
 {: style="color:gray; font-size: 80%; text-align: center;"}
 
 However, the trip while long, was fairly uneventful, started out late, drove overnight,
 
-![A dusky start](/images/blog/2023-08-12-light-tower-antenna-build-2/start.jpg)
+![A dusky start](/images/blog/2024-02-24-light-tower-antenna-build-2/start.jpg)
 Starting late in day
 {: style="color:gray; font-size: 80%; text-align: center;"}
 
-![First annoying Traffic](/images/blog/2023-08-12-light-tower-antenna-build-2/traffic.jpg)
+![First annoying Traffic](/images/blog/2024-02-24-light-tower-antenna-build-2/traffic.jpg)
 Surely I'll miss the traffic if I drive all night... aww crud!
 {: style="color:gray; font-size: 80%; text-align: center;"}
 
@@ -53,7 +53,7 @@ They grab a front loader, drag it out, I pull the van around, hook it up, size u
 
 "Aren't you throwing this out?" -- Yeah I am, "well, we'll go grab the front loader again and chain it up and yank it out for you" -- SCORE! These guys are helping me dispose of something I honestly have no use for. The motor is toast, in pieces, maybe I could salvage it but honestly it's a lot of work that I'm unfamiliar with, with a way overkill generator. One chain-and-yank later and I'm one motor lighter. Finish packing up, and on the road I go.
 
-![Mostly packed](/images/blog/2023-08-12-light-tower-antenna-build-2/pick-up.jpg)
+![Mostly packed](/images/blog/2024-02-24-light-tower-antenna-build-2/pick-up.jpg)
 You can see the generator in this shot, all the parts are in the back of the van.
 {: style="color:gray; font-size: 80%; text-align: center;"}
 
@@ -65,7 +65,7 @@ Remember how I mentioned I could pick up new tires for this? Just a brief stop, 
 
 First problem strikes, what is that dirt all over the back of my rear windshield?! There is no cap on the gas tank and diesel is sloshing up onto the van, I pull into a gas station, clean off the van to prevent paint damage, and fashion a gas gap with zip ties and a bag.
 
-![Diesel mess](/images/blog/2023-08-12-light-tower-antenna-build-2/diesel-mess.jpg)
+![Diesel mess](/images/blog/2024-02-24-light-tower-antenna-build-2/diesel-mess.jpg)
 You can see splotching on the windshield, that's diesel mixed with water.
 {: style="color:gray; font-size: 80%; text-align: center;"}
 
@@ -73,13 +73,13 @@ Things are going smoothly until a sudden violent vibration rocks the rear of the
 
 I limp across a bridge I was coming up on, get onto and off-amp and start considering what is going on.
 
-![Tire loss](/images/blog/2023-08-12-light-tower-antenna-build-2/shreds.jpg)
+![Tire loss](/images/blog/2024-02-24-light-tower-antenna-build-2/shreds.jpg)
 To shreds you say; a shredded tire, tower extended, diesel all over the front of the trailer, the fender is bent to all hell.
 {: style="color:gray; font-size: 80%; text-align: center;"}
 
 I drop the trailer, run down to the local tractor supply, buy a new RV tire, rush back, start the annoying process of replacing the tire on an onramp. It's dirty, the tire belt shreds can easily pierce my work gloves, getting it off of the fender it wrapped around is a pain, I'm stressing because I'm hundreds of miles away from home.
 
-![lug-nut](/images/blog/2023-08-12-light-tower-antenna-build-2/lugnut.jpg)
+![lug-nut](/images/blog/2024-02-24-light-tower-antenna-build-2/lugnut.jpg)
 OK, so nothing is going to go smoothly, I bust a lug-nut taking them off. Luckily this was the only one. My heart skipped a beat at the thought of them all breaking.
 {: style="color:gray; font-size: 80%; text-align: center;"}
 
@@ -101,7 +101,7 @@ It's cramped, the back of the van is full of now a dead tire and various parts t
 
 Well I can't drag this trailer to the nearest place, so I scoot across the street near some tracks, drop the trailer, scoot to another tractor supply, one tire later, I'm back and replacing another tire. This one is much easier since it didn't violently shred and wrap around any of the trailer. Replaced, two messes of tires in the back of the van.
 
-![2nd loss](/images/blog/2023-08-12-light-tower-antenna-build-2/2nd-tire-loss.jpg)
+![2nd loss](/images/blog/2024-02-24-light-tower-antenna-build-2/2nd-tire-loss.jpg)
 Well there are no more tires to replace, at least the fender is in good shape this time.
 {: style="color:gray; font-size: 80%; text-align: center;"}
 
