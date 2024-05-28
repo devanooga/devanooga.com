@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Join us
+title: Slack
 permalink: /slack/
 menu_group: 1
 menu_sort: 3
