@@ -41,6 +41,7 @@ Currently, our Slack Team is administered by the following people:
 - Bobby Burden, @brb3 on Slack
 - Mario Ezra, @ME. on Slack
 - William Roush, @strangewill on Slack
+- Ryan Maynard, @ryanmaynard
 
 ## Changes to the Code of Conduct
 
