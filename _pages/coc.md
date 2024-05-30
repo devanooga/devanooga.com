@@ -36,12 +36,12 @@ devanooga is organized by Chattanooga-area members. We want to foster a communit
 
 ## Administrators
 
-Currently, our Slack Team is administered by the following people:
+Currently, our Slack Organization and Forums are administered by the following people:
 
 - Bobby Burden, @brb3 on Slack
 - Mario Ezra, @ME. on Slack
 - William Roush, @strangewill on Slack
-- Ryan Maynard, @ryanmaynard
+- Ryan Maynard, @ryanmaynard on Slack
 
 ## Changes to the Code of Conduct
 
@@ -65,6 +65,18 @@ We ask that users keep these additional rules in mind when using the devanooga S
 - {:#slack-politics-religion} Political, religious, and otherwise sensitive or controversial discussions are welcome, but we ask that users keep such topics out of the `#general` and `#random` channels.
 - {:#slack-new-channels} Users are welcome to create new channels for any topic. Administrators _may_ remove a channel if it is determined that it violates our CoC or if the channel is unused and cluttering up our channel list.
 - {:#slack-bots} Bots that provide information relevant to a channel, or provide some utility to a channel or the organization are encouraged. Bots that exist only as a joke or to provide content that could reasonably be considered spam are actively discouraged, and may be deleted.
+
+## Use of the Forums
+
+Like our Slack Organization, the [devanooga Forums](https://forums.devanooga.com) is a privilege we provide and maintain for our community. As with slack, the admins may choose to revoke the privileges of a user to post the Forum.
+
+- {:#forums-one-account} Users are allowed only one account.
+- {:#forums-impersonation} Users may not impersonate other users, celebrities, etc.
+- {:#forums-on-topic} Please keep threads, and the posts on those threads on topic. Administrators may remove threads that are off-topic for the community, remove posts that are off-topic for a thread, or move threads to an appropriate forum.
+- {:#forums-titles} Create clear and descriptive titles for new threads to help others understand the topic at a glance.
+- {:#forums-duplicate} Before starting a new thread, use the search function to see if a similar topic already exists. Contribute to existing discussions where possible.
+- {:#forums-appropriate-content} Remember that all content posted to the Forums is publicly viewable and will reflect the devanooga community. Content that the administrators and community feel do not reflect the spirit of devanooga (such as hate speech, racism, etc) will be removed without warning.
+- {:#forums-reporting} Use the Forums' reporting system (linked on every post) to report content that you feel violates our Code of Conduct. Administrators will review and act on reports promptly when appropriate.
 
 ## Privacy
 
