@@ -1,3 +1,11 @@
+---
+title: The 2024 Devanooga Developer Survey
+layout: post
+permalink: /blog/2024/06/30/the-2024-devanooga-developer-survey
+author: ryanmaynard
+tags:
+  - meta
+---
 # The 2024 Chattanooga Developer Survey
 
 ## Introduction
@@ -15,7 +23,7 @@ The employment distribution is as follows:
 * Contract/Freelance: 6 respondents
 * Part-time: 3 respondents
 
-![]()
+![Type of Employment](/images/blog/2024-06-30-the-2024-devanooga-developer-survey/TypeofEmployment.png)
 
 **Educational Background:**
 
@@ -23,7 +31,7 @@ The employment distribution is as follows:
 * No Completed Degree in this Field: 45 respondents
 * Associates Degree: 5 respondents
 
-![]()
+![Degree](/images/blog/2024-06-30-the-2024-devanooga-developer-survey/Degree.png)
 
 ## Programming Languages and Work Environment
 
@@ -31,11 +39,11 @@ Developers in Chattanooga work with a diverse range of programming languages.
 
 **Here are the most commonly used languages:**  Python - JavaScript - C# - SQL - Go - TypeScript - Bash
 
-![]()
+![Programming Languages](/images/blog/2024-06-30-the-2024-devanooga-developer-survey/ProgrammingLanguages.png)
 
 **Work Location:** A significant number of developers work from home, reflecting a shift towards remote work arrangements in the tech industry.
 
-![]()
+![Where You Work](/images/blog/2024-06-30-the-2024-devanooga-developer-survey/WhereYouWork.png)
 
 **Professional Experience**
 
@@ -49,7 +57,7 @@ Years in the Profession:
 
 This distribution shows a healthy mix of both seasoned professionals and those in the early stages of their careers.
 
-![]()
+![Years of Experience](/images/blog/2024-06-30-the-2024-devanooga-developer-survey/YearsOfExperience.png)
 
 **Community Involvement**
 
@@ -90,8 +98,6 @@ The preference for languages like Python and JavaScript aligns with global indus
 
 **Remote Work:**
 The prevalence of remote work suggests a shift in workplace culture. This trend may offer increased flexibility but also presents challenges in terms of team cohesion and communication.
-
-![]()
 
 **Diversity Initiatives:**
 While diversity and inclusion efforts are moderately rated, there is a clear need for more robust initiatives. Companies can benefit from creating more inclusive policies and fostering a diverse workforce.
