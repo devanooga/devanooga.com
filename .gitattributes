@@ -1,0 +1,40 @@
+# Normalize line endings to LF in the repo.
+# Windows checkouts can still get CRLF locally via core.autocrlf=true.
+* text=auto eol=lf
+
+# Explicit text (helps git detect on edge cases)
+*.html      text
+*.md        text
+*.markdown  text
+*.css       text
+*.scss      text
+*.sass      text
+*.js        text
+*.json      text
+*.yml       text
+*.yaml      text
+*.rb        text
+*.rake      text
+*.xml       text
+*.svg       text
+*.txt       text
+Gemfile     text
+Rakefile    text
+Gemfile.lock text
+
+# Binary assets
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.ico     binary
+*.pdf     binary
+*.zip     binary
+*.gz     binary
+*.eot     binary
+*.ttf     binary
+*.woff    binary
+*.woff2   binary
+*.sketch  binary
+*.psd     binary
+*.ai      binary

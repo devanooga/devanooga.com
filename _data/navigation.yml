@@ -1,0 +1,31 @@
+# Top-level navigation structure.
+# `url` makes the item a plain link.
+# `children` makes the item a submenu (parent label is not a link).
+- title: Slack
+  url: /slack/
+- title: Forums
+  url: https://forums.devanooga.com/
+- title: Blog
+  url: /blog/
+- title: Community
+  children:
+    - title: Members
+      url: /members/
+    - title: Projects
+      url: /projects/
+    - title: Events
+      url: /events/
+    - title: Outreach
+      url: /outreach/
+    - title: Channels
+      url: /channels/
+- title: About
+  children:
+    - title: About
+      url: /about/
+    - title: Code of Conduct
+      url: /code-of-conduct/
+    - title: Radio Freqs
+      url: /radio-freqs/
+    - title: Contact
+      url: /contact/

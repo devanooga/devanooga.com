@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Code of Conduct
+description: "The devanooga Code of Conduct — how we expect members to treat each other in our Slack, forums, and other community spaces."
 permalink: /code-of-conduct/
 layout_modifier: code-of-conduct
 ---

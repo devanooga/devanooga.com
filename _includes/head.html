@@ -6,6 +6,31 @@
 
   {% seo %}
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "devanooga",
+    "url": "{{ site.url }}",
+    "logo": "{{ site.url }}{{ site.logo }}",
+    "description": "{{ site.description | strip_html }}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chattanooga",
+      "addressRegion": "TN",
+      "addressCountry": "US"
+    },
+    "areaServed": "Chattanooga, Tennessee",
+    "sameAs": [
+      "https://x.com/devanooga",
+      "https://github.com/devanooga",
+      "https://www.reddit.com/r/devanooga/",
+      "https://forums.devanooga.com/"
+    ],
+    "nonprofitStatus": "Nonprofit501c3"
+  }
+  </script>
+
   {% include ga.html %}
   {% include google-fonts.html %}
   {% include stylesheets.html %}

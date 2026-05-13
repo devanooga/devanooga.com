@@ -1,25 +1,68 @@
 .navigation {
-  ol {
+  ol, ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  li {
+
+  // ----- MOBILE (default): accordion under hamburger -----
+
+  .navigation--item {
     background-color: #fff;
     border-top: 1px solid $grey-color-light;
     border-bottom: 1px solid $grey-color-light;
-    & ~ li {
+    & ~ .navigation--item {
       border-top: none;
     }
-    a {
+    > a,
+    > .navigation--submenu-toggle {
       display: block;
+      width: 100%;
       font-size: (14/$base-font-size)*1em;
       font-weight: 500;
       text-transform: uppercase;
       padding: (1em - (4/14)*1em) (18/14*$spacing-unit);
       color: inherit;
+      background: none;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      font-family: inherit;
+      line-height: 1.4;
     }
   }
+
+  .navigation--submenu {
+    max-height: 0;
+    overflow: hidden;
+    background-color: $grey-color-light;
+    transition: max-height 0.2s ease-out;
+
+    li a {
+      display: block;
+      padding: (0.6em - (4/14)*1em) ((18/14*$spacing-unit) + 1em);
+      font-size: (13/$base-font-size)*1em;
+      text-transform: uppercase;
+      color: inherit;
+      font-weight: 400;
+    }
+  }
+
+  .navigation--submenu-toggle[aria-expanded="true"] + .navigation--submenu {
+    max-height: 500px;
+  }
+
+  .navigation--caret {
+    float: right;
+    display: inline-block;
+    transition: transform 0.2s ease-out;
+  }
+
+  .navigation--submenu-toggle[aria-expanded="true"] .navigation--caret {
+    transform: rotate(180deg);
+  }
+
+  // ----- HEADER NAV WRAPPER (hamburger reveal) -----
   header & {
     z-index: 3;
     max-height: 0;
@@ -28,93 +71,99 @@
     margin-left: $spacing-unit*-1;
     margin-right: $spacing-unit*-1;
     transition-property: max-height;
-    li {
-      background-color: #fff;
-      border-color: $grey-color-light;
-      a {
-        color: $text-color;
-        font-weight: normal;
-        display: block;
-        border: (4/14)*1em solid transparent;
-        &:hover, &:focus, &.active {
-          outline: none;
-          background-color: $grey-color-light;
-        }
-        &:focus {
-          border-color: $grey-color-dark;
-        }
+
+    .navigation--item > a,
+    .navigation--item > .navigation--submenu-toggle {
+      color: $text-color;
+      font-weight: normal;
+      border: (4/14)*1em solid transparent;
+      &:hover, &:focus, &.active {
+        outline: none;
+        background-color: $grey-color-light;
+      }
+      &:focus {
+        border-color: $grey-color-dark;
       }
     }
+
     &:target {
-      max-height: 300px;
-      ol{
+      max-height: 800px;
+      ul.navigation--items {
         position: relative;
         z-index: 10;
       }
     }
+
+    // ----- DESKTOP: inline nav + dropdown submenus -----
     @media screen and (min-width: (720/16)*1em) {
       padding-top: 0;
       max-height: none;
-      ol {
+      overflow: visible;
+
+      .navigation--items {
         padding-left: (214/$base-font-size)*1em;
-        padding-right: (120/$base-font-size)*1em;
         text-align: right;
-        z-index: 1;
       }
-      &:target ol {
-        z-index: 3;
-      }
-      li[data-menu-group="1"] {
-        display: inline;
+
+      .navigation--item {
+        display: inline-block;
         border: none;
         background-color: transparent;
         position: relative;
         z-index: 3;
-        a {
+        text-align: left;
+
+        > a,
+        > .navigation--submenu-toggle {
           display: inline-block;
+          width: auto;
           padding-left: $spacing-unit/2 - (4/14)*1em;
           padding-right: $spacing-unit/2 - (4/14)*1em;
         }
       }
-      li[data-menu-group="2"] {
-        border-left: 1px solid $grey-color-light;
-        margin-left: auto;
-        margin-right: (-120/$base-font-size)*1em;
-        width: (200/$base-font-size)*1em;
-        border-top: 1px solid $grey-color-light;
-        clear: both;
+
+      .navigation--submenu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        min-width: (180/$base-font-size)*1em;
         display: none;
-        position: relative;
-        & + [data-menu-group="2"] {
-          border-top: none;
-          margin-top: 0;
+        background-color: #fff;
+        border: 1px solid $grey-color-light;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        text-align: left;
+        max-height: none;
+        overflow: visible;
+
+        li {
+          background-color: #fff;
+          border-top: 1px solid $grey-color-light;
+          &:first-child { border-top: none; }
+        }
+
+        li a {
+          display: block;
+          padding: (8/14)*1em (16/14)*1em;
+          white-space: nowrap;
+          font-size: (13/$base-font-size)*1em;
+          text-transform: uppercase;
+          color: $text-color;
+          &:hover, &:focus {
+            background-color: $grey-color-light;
+            outline: none;
+          }
         }
       }
-      &:target li[data-menu-group="2"] {
+
+      .has-submenu:hover .navigation--submenu,
+      .has-submenu:focus-within .navigation--submenu,
+      .navigation--submenu-toggle[aria-expanded="true"] + .navigation--submenu {
         display: block;
-        z-index: 10;
       }
-    }
-    @media screen and (min-width: (870/16)*1em) {
-      ol {
-        padding-right: 0;
-      }
-      li[data-menu-group="2"], &:target li[data-menu-group="2"] {
-        border: none;
-        z-index: 1;
-        margin-top: 0;
-        margin-right: 0;
-        width: auto;
+
+      .navigation--caret {
         float: none;
-        clear: none;
-        display: inline;
-        border: none;
-        background-color: transparent;
-        a {
-          display: inline-block;
-          padding-left: $spacing-unit/2 - (4/14)*1em;
-          padding-right: $spacing-unit/2 - (4/14)*1em;
-        }
+        margin-left: 0.25em;
       }
     }
   }
@@ -148,24 +197,10 @@
     height: (19/14)*1em;
     background-image: url("/images/menu-sammich@1x.png");
     background-position: center center;
-    // define background-size for browsers that don’t support cover
     background-size: (21/$base-font-size)*1em (19/$base-font-size)*1em;
     background-size: cover;
   }
   @media screen and (min-width: (720/16)*1em) {
-    .enhanced & {
-      z-index: 1;
-      text-indent: -999em;
-      &::after {
-        content: 'More';
-        display: block;
-        text-indent: 0;
-        float: left;
-        clear: none;
-      }
-    }
-  }
-  @media screen and (min-width: (870/16)*1em) {
     .enhanced & {
       display: none;
     }
@@ -187,17 +222,6 @@
     display: block;
   }
   @media screen and (min-width: (720/16)*1em) {
-    .enhanced & {
-      position: absolute;
-      z-index: 3;
-      left: initial;
-      bottom: initial;
-      width: (120/$base-font-size)*1em;
-      height: (50/$base-font-size)*1em;
-      cursor: pointer;
-    }
-  }
-  @media screen and (min-width: (870/16)*1em) {
     .enhanced & {
       display: none !important;
     }

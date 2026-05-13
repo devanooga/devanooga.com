@@ -1,25 +1,74 @@
-<nav id="navigation" class="navigation">
-  <ol class="navigation--items">
-    {% assign groups = (site.pages | sort: "menu_group" | group_by: "menu_group") %}
-    {% for group in groups %}
-      {% assign pages = (group.items | sort: "menu_sort") %}
-      {% for page in pages %}
-        {% if page.menu_group > 0 %}
-        <li data-menu-group="{{ page.menu_group }}">
-          <a class="page-link" href="{% if page.external_url %}{{ page.external_url }}{% else %}{{ page.url | prepend: site.baseurl }}{% endif %}">{{ page.title }}</a>
+<nav id="navigation" class="navigation" aria-label="Primary">
+  <ul class="navigation--items">
+    {% for item in site.data.navigation %}
+      {% if item.children %}
+        {% assign submenu_id = 'submenu-' | append: forloop.index %}
+        <li class="navigation--item has-submenu">
+          <button
+            type="button"
+            class="navigation--submenu-toggle"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-controls="{{ submenu_id }}"
+          >
+            {{ item.title }}
+            <span class="navigation--caret" aria-hidden="true">&#9662;</span>
+          </button>
+          <ul id="{{ submenu_id }}" class="navigation--submenu">
+            {% for child in item.children %}
+              <li>
+                <a class="page-link" href="{% if child.url contains '://' %}{{ child.url }}{% else %}{{ child.url | relative_url }}{% endif %}">{{ child.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
         </li>
-        {% endif %}
-      {% endfor %}
+      {% else %}
+        <li class="navigation--item">
+          <a class="page-link" href="{% if item.url contains '://' %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}">{{ item.title }}</a>
+        </li>
+      {% endif %}
     {% endfor %}
-  </ol>
+  </ul>
   <a href="#header" class="navigation--close"><span class="sr-only">Back to content</span></a>
 </nav>
 
 <script>
   (function (window, document) {
+    var nav = document.getElementById('navigation');
+    if (!nav) return;
+
     var close_button = document.getElementsByClassName('navigation--close')[0];
-    close_button.addEventListener('click', function go_back (event) {
-      window.history.back();
+    if (close_button) {
+      close_button.addEventListener('click', function () {
+        window.history.back();
+      });
+    }
+
+    var toggles = nav.querySelectorAll('.navigation--submenu-toggle');
+
+    function close_all (except) {
+      for (var i = 0; i < toggles.length; i++) {
+        if (toggles[i] !== except) {
+          toggles[i].setAttribute('aria-expanded', 'false');
+        }
+      }
+    }
+
+    for (var i = 0; i < toggles.length; i++) {
+      toggles[i].addEventListener('click', function (event) {
+        event.stopPropagation();
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        close_all(this);
+        this.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+      });
+    }
+
+    document.addEventListener('click', function (event) {
+      if (!nav.contains(event.target)) close_all(null);
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' || event.key === 'Esc') close_all(null);
     });
   })(window, document);
 </script>

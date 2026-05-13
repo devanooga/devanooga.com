@@ -5,6 +5,7 @@ description: "An online community of tech enthusiasts in and around Chattanooga,
 url: "https://devanooga.com"
 github_username:  devanooga
 logo: /images/devanooga_logo_red.png
+image: /images/devanooga_logo_red.png
 pagination: 5
 excerpt_separator: "<!--excerpt-->"
 
@@ -42,9 +43,10 @@ twitter:
 social:
   name: devanooga
   links:
-    - https://twitter.com/devanooga
+    - https://x.com/devanooga
     - https://github.com/devanooga
     - https://www.reddit.com/r/devanooga/
+    - https://forums.devanooga.com/
 
 sass:
   style: compressed

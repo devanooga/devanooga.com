@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Slack
+description: "Join the devanooga Slack — the main chat for Chattanooga developers, designers, and tech enthusiasts."
 permalink: /slack/
 menu_group: 1
 menu_sort: 3

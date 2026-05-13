@@ -3,7 +3,8 @@ layout: default
 title: Radio Freqs
 permalink: /radio-freqs/
 menu_group: 1
-menu_sort: 10
+menu_sort: 8
+description: "Radio Freqs (W3DEV) — the devanooga amateur radio club for the Chattanooga and NW Georgia area."
 ---
 
 # Radio Freqs Amateur Radio Club
