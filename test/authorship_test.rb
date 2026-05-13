@@ -24,7 +24,7 @@ class TestBlogPosts < Test::Unit::TestCase
       yaml = get_front_matter("_collections/members/#{f}")
       assert_not_nil(yaml, "#{f} does not contain YAML front matter")
       assert_not_nil(yaml['name'], "#{f} does not contain a name")
-      author_name = f.sub!(/\.md/, '')
+      author_name = f.sub!('.md', '')
       members[author_name] = yaml['name']
     end
 
