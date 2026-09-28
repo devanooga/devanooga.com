@@ -29,6 +29,8 @@ devanooga is a member of the [Electronic Frontier Alliance](https://www.eff.org/
 
 We expect everyone in our spaces to follow our [Code of Conduct](/code-of-conduct/). The short version: treat others the way you would want to be treated.
 
+Administrative actions are recorded in our public [moderation log](https://bot.devanooga.com/moderation).
+
 ## Get involved
 
 - [Join our Slack](/slack/) is the fastest way in.
