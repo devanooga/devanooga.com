@@ -88,7 +88,7 @@ Like our Slack Organization, the [devanooga Forums](https://forums.devanooga.com
   - {:#privacy-chat-logs-rants} `#rants` - 7 days
   - {:#privacy-chat-logs-sandbox} `#sandbox` - 1 day
 - {:#privacy-admin-email} All administrators have access to the <admin@devanooga.com> e-mail address.
-- {:#privacy-donations} All donations over $50 for a one-time donation, $600 for the year or at the request of the donor are publicly tracked on our meta repo in our financial reports, this includes who donated and how much.
+- {:#privacy-donations} All donations over $50 for a one-time donation, $600 for the year or at the request of the donor are publicly tracked in our [financial reports](https://bot.devanooga.com/finances), this includes who donated and how much.
 
 ## Electronic Frontier Foundation
 

@@ -33,6 +33,7 @@ We expect everyone in our spaces to follow our [Code of Conduct](/code-of-conduc
 
 - [Join our Slack](/slack/) is the fastest way in.
 - [Donate](https://donorbox.org/donate-to-devanooga). Tax-deductible.
+- [Our finances](https://bot.devanooga.com/finances) are public, every transaction since 2020.
 - [Sponsor or get involved](/contact/) by reaching out via the contact form.
 
 ## The organizers
